@@ -35,7 +35,7 @@ public class WaveSpawner : MonoBehaviour
         {
             if(enemiesToSpawn.Count > 0)
             {
-                GameObject enemy = (GameObject)Instantiate(enemiesToSpawn[0], spawnLocation[spawnIndex = Random.Range(0, 23)].position,Quaternion.identity);
+                GameObject enemy = (GameObject)Instantiate(enemiesToSpawn[0], spawnLocation[spawnIndex = Random.Range(0, 11)].position,Quaternion.identity);
                 enemiesToSpawn.RemoveAt(0); 
                 //spawnedEnemies.Add(enemy);
                 spawnTimer = spawnInterval;

@@ -4,10 +4,12 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour 
 {
-    //public float speed = 5; ? ? ? 
-    [SerializeField] private float speed;
+    [SerializeField] public float speed;
     [SerializeField] private float jumpness;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask bottomteethLayer;
+    [SerializeField] private float jumpCooldown;
+    private float cooldownTimer = Mathf.Infinity;
     private Rigidbody2D body;
     private Animator anima;
     private BoxCollider2D boxCollider;
@@ -41,13 +43,16 @@ public class PlayerMovement : MonoBehaviour
 
         //SETTING ANIMATOR PARAMETERS
         anima.SetBool("run", horizontalInput != 0);
-        anima.SetBool("grounded", isGrounded());
+        anima.SetBool("grounded", isGrounded() || isBottomTeeth());
 
-                
-        if((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) && isGrounded())
+        if(isGrounded() && cooldownTimer > jumpCooldown || isBottomTeeth() && cooldownTimer > jumpCooldown)        
         {
-            Jump();       
+            if((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)))
+            {
+                Jump();       
+            }
         }
+        cooldownTimer += Time.deltaTime;
     }
     
     private void Jump()
@@ -55,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
         body.velocity = new Vector2(body.velocity.x, jumpness);
         anima.SetTrigger("jump");
         SoundManager.instance.PlaySound(jumpNoise);
+        cooldownTimer = 0;
     }
 
 
@@ -63,5 +69,17 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
 
         return raycastHit.collider != null;
+    }
+
+    private bool isBottomTeeth()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, bottomteethLayer);
+
+        return raycastHit.collider != null;
+    }
+
+    public bool midAir()
+    {
+        return !isGrounded() && !isBottomTeeth();
     }
 }
