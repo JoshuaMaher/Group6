@@ -148,3 +148,4 @@ MonoBehaviour:
   maxHealth: 3
   dieSound: {fileID: 8300000, guid: b9eff218e132a4e76be78840eca96fb2, type: 3}
   hurtSound: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
+  bac: {fileID: 6009461070993059498}
