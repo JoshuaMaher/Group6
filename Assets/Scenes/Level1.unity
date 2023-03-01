@@ -7096,7 +7096,7 @@ MonoBehaviour:
   bottomteethLayer:
     serializedVersion: 2
     m_Bits: 1024
-  jumpCooldown: 5
+  jumpCooldown: 1
   jumpNoise: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
 --- !u!95 &1458083282
 Animator:
@@ -7131,7 +7131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brushPoint: {fileID: 53863164}
-  brushRange: 0.6
+  brushRange: 0.5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256
