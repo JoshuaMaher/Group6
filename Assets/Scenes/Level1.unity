@@ -219,7 +219,6 @@ GameObject:
   - component: {fileID: 11027310}
   - component: {fileID: 11027309}
   - component: {fileID: 11027311}
-  - component: {fileID: 11027312}
   m_Layer: 10
   m_Name: Bot Incisor 2
   m_TagString: Incisor
@@ -253,7 +252,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -335,25 +334,6 @@ MonoBehaviour:
   startHealth: 2
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &11027312
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 11027307}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &42808992
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,7 +2762,6 @@ GameObject:
   - component: {fileID: 582295594}
   - component: {fileID: 582295593}
   - component: {fileID: 582295595}
-  - component: {fileID: 582295596}
   m_Layer: 11
   m_Name: Top Canine 2
   m_TagString: Canine
@@ -2815,8 +2794,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -2898,25 +2877,6 @@ MonoBehaviour:
   startHealth: 3
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &582295596
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582295591}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 180
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 90
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &601336976
 GameObject:
   m_ObjectHideFlags: 0
@@ -4442,7 +4402,6 @@ GameObject:
   - component: {fileID: 842762521}
   - component: {fileID: 842762522}
   - component: {fileID: 842762523}
-  - component: {fileID: 842762524}
   m_Layer: 10
   m_Name: Bot Molar 1
   m_TagString: Molar
@@ -4528,7 +4487,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -4558,25 +4517,6 @@ MonoBehaviour:
   startHealth: 4
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &842762524
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842762519}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &866620963
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,7 +5095,6 @@ GameObject:
   - component: {fileID: 945849188}
   - component: {fileID: 945849187}
   - component: {fileID: 945849189}
-  - component: {fileID: 945849190}
   m_Layer: 11
   m_Name: Top Incisor 2
   m_TagString: Incisor
@@ -5188,8 +5127,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -5271,25 +5210,6 @@ MonoBehaviour:
   startHealth: 2
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &945849190
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945849185}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 180
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 90
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &964153680
 GameObject:
   m_ObjectHideFlags: 0
@@ -5554,7 +5474,6 @@ GameObject:
   - component: {fileID: 997240853}
   - component: {fileID: 997240852}
   - component: {fileID: 997240854}
-  - component: {fileID: 997240855}
   m_Layer: 11
   m_Name: Top Molar 2
   m_TagString: Molar
@@ -5587,8 +5506,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -5670,25 +5589,6 @@ MonoBehaviour:
   startHealth: 4
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &997240855
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 997240850}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 180
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 90
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &1028306163
 GameObject:
   m_ObjectHideFlags: 0
@@ -7459,7 +7359,6 @@ GameObject:
   - component: {fileID: 1482872488}
   - component: {fileID: 1482872487}
   - component: {fileID: 1482872489}
-  - component: {fileID: 1482872490}
   m_Layer: 10
   m_Name: Bot Incisor 1
   m_TagString: Incisor
@@ -7493,7 +7392,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -7575,25 +7474,6 @@ MonoBehaviour:
   startHealth: 2
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &1482872490
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482872485}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &1488344277
 GameObject:
   m_ObjectHideFlags: 0
@@ -7858,7 +7738,6 @@ GameObject:
   - component: {fileID: 1518801200}
   - component: {fileID: 1518801199}
   - component: {fileID: 1518801201}
-  - component: {fileID: 1518801202}
   m_Layer: 11
   m_Name: Top Incisor 1
   m_TagString: Incisor
@@ -7891,8 +7770,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -7974,25 +7853,6 @@ MonoBehaviour:
   startHealth: 2
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &1518801202
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518801197}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 180
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 90
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &1560371539
 GameObject:
   m_ObjectHideFlags: 0
@@ -8342,7 +8202,6 @@ GameObject:
   - component: {fileID: 1630244914}
   - component: {fileID: 1630244913}
   - component: {fileID: 1630244915}
-  - component: {fileID: 1630244916}
   m_Layer: 10
   m_Name: Bot Canine 1
   m_TagString: Canine
@@ -8376,7 +8235,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -8458,25 +8317,6 @@ MonoBehaviour:
   startHealth: 3
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &1630244916
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630244911}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &1636611449
 GameObject:
   m_ObjectHideFlags: 0
@@ -8640,7 +8480,6 @@ GameObject:
   - component: {fileID: 1682561618}
   - component: {fileID: 1682561617}
   - component: {fileID: 1682561619}
-  - component: {fileID: 1682561620}
   m_Layer: 11
   m_Name: Top Canine 1
   m_TagString: Canine
@@ -8673,8 +8512,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -8756,25 +8595,6 @@ MonoBehaviour:
   startHealth: 3
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &1682561620
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682561615}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 180
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 90
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &1693709716
 GameObject:
   m_ObjectHideFlags: 0
@@ -9602,7 +9422,6 @@ GameObject:
   - component: {fileID: 1801883118}
   - component: {fileID: 1801883117}
   - component: {fileID: 1801883119}
-  - component: {fileID: 1801883120}
   m_Layer: 10
   m_Name: Bot Canine 2
   m_TagString: Canine
@@ -9636,7 +9455,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -9718,25 +9537,6 @@ MonoBehaviour:
   startHealth: 3
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &1801883120
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801883115}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &1855066830
 GameObject:
   m_ObjectHideFlags: 0
@@ -10175,7 +9975,6 @@ GameObject:
   - component: {fileID: 1870031612}
   - component: {fileID: 1870031611}
   - component: {fileID: 1870031613}
-  - component: {fileID: 1870031614}
   m_Layer: 11
   m_Name: Top Molar 1
   m_TagString: Molar
@@ -10208,8 +10007,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -10291,25 +10090,6 @@ MonoBehaviour:
   startHealth: 4
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &1870031614
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870031609}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 180
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 90
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &1878264355
 GameObject:
   m_ObjectHideFlags: 0
@@ -10653,7 +10433,6 @@ GameObject:
   - component: {fileID: 1985606958}
   - component: {fileID: 1985606957}
   - component: {fileID: 1985606959}
-  - component: {fileID: 1985606960}
   m_Layer: 10
   m_Name: Bot Molar 2
   m_TagString: Molar
@@ -10687,7 +10466,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -10769,25 +10548,6 @@ MonoBehaviour:
   startHealth: 4
   decayNoise: {fileID: 0}
   hurtNoise: {fileID: 0}
---- !u!251 &1985606960
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985606955}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 128
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!1 &1987612936
 GameObject:
   m_ObjectHideFlags: 0
