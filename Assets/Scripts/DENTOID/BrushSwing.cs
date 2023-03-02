@@ -14,14 +14,21 @@ public class BrushSwing : MonoBehaviour
     [SerializeField] private int brushDamage = 1;
     private Rigidbody2D body;
     private PlayerMovement playerMove;
-    
 
+    //clean teeth stuff
+    [SerializeField] private LayerMask topTeeth;
+    private float chargeTimer = Mathf.Infinity;
+    private BoxCollider2D boxCollider;
+    [SerializeField] private float maxClean;
+    
 
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
         anima = GetComponent<Animator>();
         playerMove = GetComponent<PlayerMovement>();
+        //clean teeth stuff
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
 
@@ -31,6 +38,11 @@ public class BrushSwing : MonoBehaviour
             Swing();
         
         cooldownTimer += Time.deltaTime;
+
+        //clean teeth stuff
+        if(Input.GetKey(KeyCode.X) && TouchingTeeth() && cooldownTimer > brushCooldown)
+            chargeTimer += Time.deltaTime;
+            CleanTeeth();       
     }
 
     private void Swing()
@@ -66,5 +78,40 @@ public class BrushSwing : MonoBehaviour
     {
         body.gravityScale = 3;
         playerMove.speed = 5f;
+    }
+
+    //clean teeth stuff
+     private bool TouchingTeeth()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, topTeeth);
+
+        return raycastHit.collider != null;
+    }
+
+    //clean teeth stuff
+     private void CleanTeeth()
+    {
+        while(chargeTimer <= maxClean && TouchingTeeth())
+        {
+            Collider2D[] hitTeeth = Physics2D.OverlapCircleAll(brushPoint.position, brushRange, topTeeth);
+
+            foreach(Collider2D tooth in hitTeeth)
+            {
+                tooth.GetComponent<ToothHealth>().AddHealth(1);
+            }
+
+            SoundManager.instance.PlaySound(brushSound);
+            anima.SetTrigger("BRUSH");
+            chargeTimer = 0;
+            cooldownTimer = 0;
+
+            if(playerMove.midAir())
+            {
+                body.gravityScale = 0;
+                body.velocity = Vector2.zero;
+                playerMove.speed = 0f;
+            }  
+        }
+    
     }
 }
