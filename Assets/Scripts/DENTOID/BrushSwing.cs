@@ -57,13 +57,6 @@ public class BrushSwing : MonoBehaviour
         SoundManager.instance.PlaySound(brushSound);
         anima.SetTrigger("BRUSH");
         cooldownTimer = 0;
-
-           if(playerMove.midAir())
-            {
-                body.gravityScale = 0;
-                body.velocity = Vector2.zero;
-                playerMove.speed = 0f;
-            }  
     }
 
     private void OnDrawGizmosSelected()
