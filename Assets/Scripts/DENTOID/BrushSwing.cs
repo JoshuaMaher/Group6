@@ -51,12 +51,26 @@ public class BrushSwing : MonoBehaviour
 
         foreach(Collider2D enemy in hitEnemies)
         {
-           enemy.GetComponent<EnemyHealth>().damageEnemy(brushDamage);
+            if (enemy.tag == "Enemy")
+            {
+
+                enemy.GetComponent<EnemyHealth>().damageEnemy(brushDamage);
+            }
+
+            if (enemy.tag == "FlyingEnemy")
+            {
+
+                enemy.GetComponent<PlaytestEnemy>().damageEnemy(brushDamage);
+            }
+
         }
 
         SoundManager.instance.PlaySound(brushSound);
         anima.SetTrigger("BRUSH");
         cooldownTimer = 0;
+
+
+
     }
 
     private void OnDrawGizmosSelected()
