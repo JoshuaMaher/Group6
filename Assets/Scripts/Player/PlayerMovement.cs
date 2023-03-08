@@ -17,7 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] private AudioClip jumpNoise;
-  
+    [SerializeField] private AudioSource run;
+
 
     //GET REFERENCES FOR RIGIDBODY AND ANIMATOR FROM GAME OBJECT 
     private void Awake()
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anima = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        
     }
 
     private void Update()
@@ -39,7 +41,16 @@ public class PlayerMovement : MonoBehaviour
         else if(horizontalInput < -0.01f)
             transform.localScale = new Vector3(-2,2,2);
 
-       
+        //Play Run Sound
+        if((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)))
+        {
+            run.Play();
+        }
+
+        if ((Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow)))
+        {
+            run.Stop();
+        }
 
         //SETTING ANIMATOR PARAMETERS
         anima.SetBool("run", horizontalInput != 0);
