@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnEnemy : MonoBehaviour
+public class GreenEnemy : MonoBehaviour
 {
     public float bulletSpeed;  //Enemies are called "bullets" right now
     public Transform shootPos; 
@@ -40,7 +40,7 @@ public class SpawnEnemy : MonoBehaviour
     {
         shootTimer += Time.deltaTime;
 
-        if (shootTimer > 10 && enemyCount <= 5 )
+        if (shootTimer > 20 && enemyCount <= 5 )
         {
             shootTimer = 0;
             StartCoroutine(fireBullet());
