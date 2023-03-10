@@ -25,6 +25,8 @@ public class SpawnEnemy : MonoBehaviour
 
     private float randomNumber;
 
+    private int enemyCount = 0;
+
 
 
 
@@ -38,7 +40,7 @@ public class SpawnEnemy : MonoBehaviour
     {
         shootTimer += Time.deltaTime;
 
-        if (shootTimer > 5)
+        if (shootTimer > 10 && enemyCount <= 5 )
         {
             shootTimer = 0;
             StartCoroutine(fireBullet());
@@ -110,6 +112,8 @@ public class SpawnEnemy : MonoBehaviour
 
         newBullet.transform.localScale = new Vector2(newBullet.transform.localScale.x * direction(), newBullet.transform.localScale.y);
         yield return new WaitForSeconds(shootTimer);
+
+        enemyCount++;
 
     }
 

@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float speed;
     [SerializeField] private float jumpness;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private LayerMask bottomteethLayer;
     [SerializeField] private float jumpCooldown;
     private float cooldownTimer = Mathf.Infinity;
     private Rigidbody2D body;
@@ -17,7 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] private AudioClip jumpNoise;
-  
+    [SerializeField] private AudioSource run;
+
 
     //GET REFERENCES FOR RIGIDBODY AND ANIMATOR FROM GAME OBJECT 
     private void Awake()
@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anima = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        
     }
 
     private void Update()
@@ -39,13 +40,22 @@ public class PlayerMovement : MonoBehaviour
         else if(horizontalInput < -0.01f)
             transform.localScale = new Vector3(-2,2,2);
 
-       
+        //Play Run Sound
+        if((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)))
+        {
+            run.Play();
+        }
+
+        if ((Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow)))
+        {
+            run.Stop();
+        }
 
         //SETTING ANIMATOR PARAMETERS
         anima.SetBool("run", horizontalInput != 0);
-        anima.SetBool("grounded", isGrounded() || isBottomTeeth());
+        anima.SetBool("grounded", isGrounded());
 
-        if(isGrounded() && cooldownTimer > jumpCooldown || isBottomTeeth() && cooldownTimer > jumpCooldown)        
+        if(isGrounded() && cooldownTimer > jumpCooldown)        
         {
             if((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)))
             {
@@ -71,15 +81,8 @@ public class PlayerMovement : MonoBehaviour
         return raycastHit.collider != null;
     }
 
-    private bool isBottomTeeth()
-    {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, bottomteethLayer);
-
-        return raycastHit.collider != null;
-    }
-
     public bool midAir()
     {
-        return !isGrounded() && !isBottomTeeth();
+        return !isGrounded();
     }
 }
