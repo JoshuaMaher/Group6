@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2407857193234683109}
   - component: {fileID: 6191572648135856796}
   - component: {fileID: 5237170358721330650}
+  - component: {fileID: 8537550175733189020}
   m_Layer: 8
   m_Name: GreenEnemy
   m_TagString: FlyingEnemy
@@ -141,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4938f697fdff893438d4ce805de6d182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
+  maxHealth: 1
   currentHealth: 0
 --- !u!50 &6191572648135856796
 Rigidbody2D:
@@ -177,3 +178,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletLifetime: 6
+--- !u!114 &8537550175733189020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2407857193234683103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14c24487a45e7454685254460969ae40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1

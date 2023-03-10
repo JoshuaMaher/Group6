@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float speed;
     [SerializeField] private float jumpness;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private LayerMask bottomteethLayer;
     [SerializeField] private float jumpCooldown;
     private float cooldownTimer = Mathf.Infinity;
     private Rigidbody2D body;
@@ -54,9 +53,9 @@ public class PlayerMovement : MonoBehaviour
 
         //SETTING ANIMATOR PARAMETERS
         anima.SetBool("run", horizontalInput != 0);
-        anima.SetBool("grounded", isGrounded() || isBottomTeeth());
+        anima.SetBool("grounded", isGrounded());
 
-        if(isGrounded() && cooldownTimer > jumpCooldown || isBottomTeeth() && cooldownTimer > jumpCooldown)        
+        if(isGrounded() && cooldownTimer > jumpCooldown)        
         {
             if((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)))
             {
@@ -82,15 +81,8 @@ public class PlayerMovement : MonoBehaviour
         return raycastHit.collider != null;
     }
 
-    private bool isBottomTeeth()
-    {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, bottomteethLayer);
-
-        return raycastHit.collider != null;
-    }
-
     public bool midAir()
     {
-        return !isGrounded() && !isBottomTeeth();
+        return !isGrounded();
     }
 }

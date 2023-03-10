@@ -8,6 +8,7 @@ public class BrushSwing : MonoBehaviour
     [SerializeField] private Transform brushPoint;
     [SerializeField] private float brushRange;
     [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private LayerMask teethLayer;
     [SerializeField] private float brushCooldown;
     private float cooldownTimer = Mathf.Infinity;
     [SerializeField] private AudioClip brushSound;
@@ -15,20 +16,11 @@ public class BrushSwing : MonoBehaviour
     private Rigidbody2D body;
     private PlayerMovement playerMove;
 
-    //clean teeth stuff
-    [SerializeField] private LayerMask topTeeth;
-    private float chargeTimer = Mathf.Infinity;
-    private BoxCollider2D boxCollider;
-    [SerializeField] private float maxClean;
-    
-
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
         anima = GetComponent<Animator>();
         playerMove = GetComponent<PlayerMovement>();
-        //clean teeth stuff
-        boxCollider = GetComponent<BoxCollider2D>();
     }
 
 
@@ -37,12 +29,7 @@ public class BrushSwing : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && cooldownTimer > brushCooldown)
             Swing();
         
-        cooldownTimer += Time.deltaTime;
-
-        //clean teeth stuff
-        if(Input.GetKey(KeyCode.X) && TouchingTeeth() && cooldownTimer > brushCooldown)
-            chargeTimer += Time.deltaTime;
-            CleanTeeth();       
+        cooldownTimer += Time.deltaTime;    
     }
 
     private void Swing()
@@ -62,14 +49,31 @@ public class BrushSwing : MonoBehaviour
 
                 enemy.GetComponent<PlaytestEnemy>().damageEnemy(brushDamage);
             }
+        }
 
+        Collider2D[] hitTeeth = Physics2D.OverlapCircleAll(brushPoint.position, brushRange, teethLayer);
+
+        foreach(Collider2D tooth in hitTeeth)
+        {
+            if (tooth.tag == "Molar")
+            {
+                tooth.GetComponent<ToothHealth>().AddHealth(1);
+            }
+
+            if (tooth.tag == "Canine")
+            {
+                tooth.GetComponent<ToothHealth>().AddHealth(1);
+            }
+
+            if (tooth.tag == "Incisor")
+            {
+                tooth.GetComponent<ToothHealth>().AddHealth(1);
+            }
         }
 
         SoundManager.instance.PlaySound(brushSound);
         anima.SetTrigger("BRUSH");
         cooldownTimer = 0;
-
-
 
     }
 
@@ -81,44 +85,10 @@ public class BrushSwing : MonoBehaviour
         Gizmos.DrawWireSphere(brushPoint.position, brushRange);
     }
 
+//not needed if theres no freeze on spin anymore
     private void FallDown()
     {
         body.gravityScale = 3;
         playerMove.speed = 5f;
-    }
-
-    //clean teeth stuff
-     private bool TouchingTeeth()
-    {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, topTeeth);
-
-        return raycastHit.collider != null;
-    }
-
-    //clean teeth stuff
-     private void CleanTeeth()
-    {
-        while(chargeTimer <= maxClean && TouchingTeeth())
-        {
-            Collider2D[] hitTeeth = Physics2D.OverlapCircleAll(brushPoint.position, brushRange, topTeeth);
-
-            foreach(Collider2D tooth in hitTeeth)
-            {
-                tooth.GetComponent<ToothHealth>().AddHealth(1);
-            }
-
-            SoundManager.instance.PlaySound(brushSound);
-            anima.SetTrigger("BRUSH");
-            chargeTimer = 0;
-            cooldownTimer = 0;
-
-            if(playerMove.midAir())
-            {
-                body.gravityScale = 0;
-                body.velocity = Vector2.zero;
-                playerMove.speed = 0f;
-            }  
-        }
-    
     }
 }

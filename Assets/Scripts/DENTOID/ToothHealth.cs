@@ -5,19 +5,49 @@ public class ToothHealth : MonoBehaviour
 {
     //HEALTH
     [SerializeField] private float startHealth;
-    public float currentHealth {get; private set;}
+    [SerializeField] public float currentHealth {get; private set;}
     private bool decay;
-    private SpriteRenderer spriteRen;
 
     [Header("Audio")]
     [SerializeField] private AudioClip decayNoise;
     [SerializeField] private AudioClip hurtNoise;
 
+    [Header("Sprite")]
+    [SerializeField] private Sprite health3;
+    [SerializeField] private Sprite health2;
+    [SerializeField] private Sprite health1;  
+    [SerializeField] private Sprite health0;  
 
     private void Awake()
     {
         currentHealth = startHealth;
-        spriteRen = GetComponent<SpriteRenderer>();
+        decay = false;
+    }
+
+    private void FixedUpdate()
+    {
+        //PLAQUE
+        
+         if(currentHealth == 3)
+        {
+            //DEFAULT TOOTH SPRITE
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = health3;
+        }
+        else if(currentHealth == 2)
+        {
+            //SPRITE WITH PLAQUE ON TOOTH
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = health2;
+        }
+        else if(currentHealth == 1)
+        {
+            //SPRITE WITH MORE PLAQUE ON TOOTH
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = health1;
+        }
+        else if(currentHealth <= 0 && decay)
+        {
+            //SPRITE WITH DECAYED TOOTH
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = health0;
+        }
     }
 
     public void TakeDamage(float _damage)
@@ -41,31 +71,7 @@ public class ToothHealth : MonoBehaviour
 
     public void AddHealth(float _amount)
     {
-        currentHealth = Mathf.Clamp(currentHealth + _amount, 0, startHealth);
+        if(currentHealth != 0)
+            currentHealth = Mathf.Clamp(currentHealth + _amount, 0, startHealth);
     }
-
-    private void Plaque()
-    {
-        if(currentHealth == 3)
-        {
-            //DEFAULT TOOTH SPRITE
-            //spriteRen.color = new Color(255,0,0,127.5f);
-        }
-        else if(currentHealth == 2)
-        {
-            //SPRITE WITH PLAQUE ON TOOTH
-            //spriteRen.color = new Color(255,0,0,127.5f);
-        }
-        else if(currentHealth == 1)
-        {
-            //SPRITE WITH PLAQUE ON TOOTH
-            //spriteRen.color = new Color(255,0,0,127.5f);
-        }
-        else if(currentHealth <= 0 && decay)
-        {
-            //PRITE WITH DECAYED TOOTH
-            //spriteRen.color = new Color(255,0,0,127.5f);
-        }
-    }
-
 }
