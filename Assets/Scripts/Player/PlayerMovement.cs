@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioClip jumpNoise;
     [SerializeField] private AudioSource run;
 
+    public bool facingLeft = true; //checks if character is facing left
+
 
     //GET REFERENCES FOR RIGIDBODY AND ANIMATOR FROM GAME OBJECT 
     private void Awake()
@@ -35,13 +37,14 @@ public class PlayerMovement : MonoBehaviour
       
 
         //FLIPS PLAYER SPRITE WHEN MOVING LEFT / RIGHT
-        if(horizontalInput > 0.01f)
-            transform.localScale = new Vector3(2,2,2);
-        else if(horizontalInput < -0.01f)
-            transform.localScale = new Vector3(-2,2,2);
+        if(horizontalInput < 0 && !facingLeft)
+            flip();
+        else if(horizontalInput > 0 && facingLeft)
+            flip();
+
 
         //Play Run Sound
-        if((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)))
+        if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)))
         {
             run.Play();
         }
@@ -64,8 +67,14 @@ public class PlayerMovement : MonoBehaviour
         }
         cooldownTimer += Time.deltaTime;
     }
-    
-    private void Jump()
+
+    private void flip()
+    {
+        facingLeft = !facingLeft;
+        transform.Rotate(0f, 180f, 0f);
+    }
+
+        private void Jump()
     {
         body.velocity = new Vector2(body.velocity.x, jumpness);
         anima.SetTrigger("jump");
