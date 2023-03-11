@@ -17,11 +17,16 @@ public class ToothHealth : MonoBehaviour
     [SerializeField] private Sprite health2;
     [SerializeField] private Sprite health1;  
     [SerializeField] private Sprite health0;  
+    private SpriteRenderer spriteRen;
+    //invunerability
+    private float invulTime = 2;
+    private int flashNum = 3;
 
     private void Awake()
     {
         currentHealth = startHealth;
         decay = false;
+        spriteRen = GetComponent<SpriteRenderer>();
     }
 
     private void FixedUpdate()
@@ -57,6 +62,7 @@ public class ToothHealth : MonoBehaviour
         if (currentHealth > 0)
         {
             SoundManager.instance.PlaySound(hurtNoise);
+            StartCoroutine(Invunerability());
         }
         else
         {
@@ -73,5 +79,19 @@ public class ToothHealth : MonoBehaviour
     {
         if(currentHealth != 0)
             currentHealth = Mathf.Clamp(currentHealth + _amount, 0, startHealth);
+    }
+
+        private IEnumerator Invunerability()
+    {
+        Physics2D.IgnoreLayerCollision(7, 8, true);
+        //DURATION OF INVUNERABILITY
+        for (int i = 0; i < flashNum; i++)
+        {
+            spriteRen.color = new Color(255,0,0,127.5f);
+            yield return new WaitForSeconds(invulTime / (flashNum * 2));
+            spriteRen.color = Color.white;
+            yield return new WaitForSeconds(invulTime / (flashNum * 2));
+        }
+        Physics2D.IgnoreLayerCollision(7, 8, false);
     }
 }
