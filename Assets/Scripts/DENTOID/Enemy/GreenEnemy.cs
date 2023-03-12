@@ -58,7 +58,7 @@ public class GreenEnemy : MonoBehaviour
 
     IEnumerator fireBullet()
     {
-        GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.Euler(0, 180, 0));
+        GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.Euler(0, 0, 180));
         newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed * direction() * Time.fixedDeltaTime, 0f);
 
         randomNumber = Random.Range(1, 12);
