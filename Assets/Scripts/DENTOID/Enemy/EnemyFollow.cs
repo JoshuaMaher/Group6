@@ -62,6 +62,7 @@ public class EnemyFollow : MonoBehaviour
         if (collision.gameObject == specifiedTooth)
         {
             collision.GetComponent<ToothHealth>().TakeDamage(damage);
+            Destroy(gameObject);
            
         }
 
