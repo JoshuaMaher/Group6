@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 2407857193234683109}
   - component: {fileID: 6191572648135856796}
   - component: {fileID: 5237170358721330650}
-  - component: {fileID: 8537550175733189020}
   m_Layer: 8
   m_Name: GreenEnemy
   m_TagString: FlyingEnemy
@@ -76,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2074347995
-  m_SortingLayer: 2
+  m_SortingLayerID: -1564314715
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1079648042, guid: 2a96f287f1aac8946973c5790f7a7695, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -104,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   specifiedTooth: {fileID: 0}
   speed: 3
+  damage: 1
 --- !u!61 &2407857193234683098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -178,16 +178,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletLifetime: 6
---- !u!114 &8537550175733189020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2407857193234683103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14c24487a45e7454685254460969ae40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
