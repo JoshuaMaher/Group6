@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Complete.unity
     guid: cfe7a95cf413cb449b4f58c31c7dd662
+  - enabled: 1
+    path: Assets/Scenes/Josh.unity
+    guid: 401b94476405d3c4c9437a6f7723240f
   m_configObjects: {}
