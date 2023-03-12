@@ -27,6 +27,8 @@ public class GreenEnemy : MonoBehaviour
 
     private int enemyCount = 0;
 
+    public int fireRate; //How often enemy spawned in seconds
+    public int ammo; //How many enemies cannon can fire
 
 
 
@@ -40,7 +42,7 @@ public class GreenEnemy : MonoBehaviour
     {
         shootTimer += Time.deltaTime;
 
-        if (shootTimer > 20 && enemyCount <= 5 )
+        if (shootTimer > fireRate && enemyCount <= ammo )
         {
             shootTimer = 0;
             StartCoroutine(fireBullet());

@@ -27,6 +27,9 @@ public class SpawnEnemy : MonoBehaviour
 
     private int enemyCount = 0;
 
+    public int fireRate;
+    public int ammo;
+
 
 
 
@@ -40,7 +43,7 @@ public class SpawnEnemy : MonoBehaviour
     {
         shootTimer += Time.deltaTime;
 
-        if (shootTimer > 10 && enemyCount <= 5 )
+        if (shootTimer > fireRate && enemyCount <= ammo )
         {
             shootTimer = 0;
             StartCoroutine(fireBullet());
