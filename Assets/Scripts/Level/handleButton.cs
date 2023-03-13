@@ -34,4 +34,9 @@ public class handleButton : MonoBehaviour
   {
     SceneManager.LoadScene("References");
   }
+  public void Retry()
+  {
+        SceneManager.LoadScene("Level1");
+  }
+
 }

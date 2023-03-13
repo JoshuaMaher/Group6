@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BrushSwing : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class BrushSwing : MonoBehaviour
     [SerializeField] private int brushDamage = 1;
     private Rigidbody2D body;
     private PlayerMovement playerMove;
+    public Text KillsText;
+    public int KillCount = 20;
 
     private void Awake()
     {
@@ -29,7 +32,10 @@ public class BrushSwing : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && cooldownTimer > brushCooldown)
             Swing();
         
-        cooldownTimer += Time.deltaTime;    
+        cooldownTimer += Time.deltaTime;
+        KillsText.text = KillCount.ToString();
+
+
     }
 
     private void Swing()
@@ -42,12 +48,15 @@ public class BrushSwing : MonoBehaviour
             {
 
                 enemy.GetComponent<EnemyHealth>().damageEnemy(brushDamage);
+                KillCount = KillCount - 1;
+
             }
 
             if (enemy.tag == "FlyingEnemy")
             {
 
                 enemy.GetComponent<PlaytestEnemy>().damageEnemy(brushDamage);
+                KillCount = KillCount - 1;
             }
         }
 
