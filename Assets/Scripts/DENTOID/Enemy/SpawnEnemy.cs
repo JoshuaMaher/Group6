@@ -27,6 +27,9 @@ public class SpawnEnemy : MonoBehaviour
 
     private int enemyCount = 0;
 
+    public int fireRate;
+    public int ammo;
+
 
 
 
@@ -40,7 +43,7 @@ public class SpawnEnemy : MonoBehaviour
     {
         shootTimer += Time.deltaTime;
 
-        if (shootTimer > 10 && enemyCount <= 5 )
+        if (shootTimer > fireRate && enemyCount <= ammo )
         {
             shootTimer = 0;
             StartCoroutine(fireBullet());
@@ -56,7 +59,7 @@ public class SpawnEnemy : MonoBehaviour
 
     IEnumerator fireBullet()
     {
-        GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.Euler(0, 180, 0));
+        GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.Euler(0, 0, 0));
         newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed * direction() * Time.fixedDeltaTime, 0f);
 
         randomNumber = Random.Range(1, 12);

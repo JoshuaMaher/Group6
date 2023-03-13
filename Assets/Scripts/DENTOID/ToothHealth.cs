@@ -18,6 +18,7 @@ public class ToothHealth : MonoBehaviour
     [SerializeField] private Sprite health1;  
     [SerializeField] private Sprite health0;  
     private SpriteRenderer spriteRen;
+    public GameObject toothSprite;
     //invunerability
     private float invulTime = 2;
     private int flashNum = 3;
@@ -37,21 +38,25 @@ public class ToothHealth : MonoBehaviour
         {
             //DEFAULT TOOTH SPRITE
             this.gameObject.GetComponent<SpriteRenderer>().sprite = health3;
+            toothSprite.SetActive(false);
         }
         else if(currentHealth == 2)
         {
             //SPRITE WITH PLAQUE ON TOOTH
             this.gameObject.GetComponent<SpriteRenderer>().sprite = health2;
+            toothSprite.SetActive(true);
         }
         else if(currentHealth == 1)
         {
             //SPRITE WITH MORE PLAQUE ON TOOTH
             this.gameObject.GetComponent<SpriteRenderer>().sprite = health1;
+            toothSprite.SetActive(true);
         }
         else if(currentHealth <= 0 && decay)
         {
             //SPRITE WITH DECAYED TOOTH
             this.gameObject.GetComponent<SpriteRenderer>().sprite = health0;
+            toothSprite.SetActive(false);
         }
     }
 

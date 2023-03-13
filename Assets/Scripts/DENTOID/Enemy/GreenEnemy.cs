@@ -27,6 +27,8 @@ public class GreenEnemy : MonoBehaviour
 
     private int enemyCount = 0;
 
+    public int fireRate; //How often enemy spawned in seconds
+    public int ammo; //How many enemies cannon can fire
 
 
 
@@ -40,7 +42,7 @@ public class GreenEnemy : MonoBehaviour
     {
         shootTimer += Time.deltaTime;
 
-        if (shootTimer > 20 && enemyCount <= 5 )
+        if (shootTimer > fireRate && enemyCount <= ammo )
         {
             shootTimer = 0;
             StartCoroutine(fireBullet());
@@ -56,7 +58,7 @@ public class GreenEnemy : MonoBehaviour
 
     IEnumerator fireBullet()
     {
-        GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.Euler(0, 180, 0));
+        GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.Euler(0, 0, 180));
         newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed * direction() * Time.fixedDeltaTime, 0f);
 
         randomNumber = Random.Range(1, 12);
