@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 42463196}
   m_Layer: 0
   m_Name: EnemySpawner (3)
-  m_TagString: Untagged
+  m_TagString: GreenSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7177,7 +7177,7 @@ GameObject:
   - component: {fileID: 1307424850}
   m_Layer: 0
   m_Name: EnemySpawner (2)
-  m_TagString: Untagged
+  m_TagString: RedSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7209,7 +7209,7 @@ MonoBehaviour:
   bottomIncisor2: {fileID: 1424854255}
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
-  fireRate: 8
+  fireRate: 7
   timer: {fileID: 683896684}
   currentTime: 0
   player: {fileID: 1458083276}
@@ -7377,7 +7377,7 @@ GameObject:
   - component: {fileID: 1351351679}
   m_Layer: 0
   m_Name: EnemySpawner
-  m_TagString: Untagged
+  m_TagString: RedSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8398,7 +8398,7 @@ GameObject:
   - component: {fileID: 1498345437}
   m_Layer: 0
   m_Name: EnemySpawner (1)
-  m_TagString: Untagged
+  m_TagString: GreenSpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8430,7 +8430,7 @@ MonoBehaviour:
   bottomIncisor2: {fileID: 1424854255}
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
-  fireRate: 12
+  fireRate: 14
   timer: {fileID: 683896684}
   currentTime: 0
   player: {fileID: 1458083276}

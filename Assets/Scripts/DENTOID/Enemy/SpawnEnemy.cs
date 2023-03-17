@@ -55,7 +55,7 @@ public class SpawnEnemy : MonoBehaviour
             if (this.gameObject.tag == "GreenSpawn")
             { 
          
-                fireRate -= 2; //smaller fire rate, more it shoots
+                fireRate -= 1; //smaller fire rate, more it shoots
             }
 
             if (this.gameObject.tag == "RedSpawn")
@@ -70,12 +70,12 @@ public class SpawnEnemy : MonoBehaviour
         {
             if (this.gameObject.tag == "GreenSpawn")
             {
-                fireRate -= 6;
+                fireRate -= 5;
             }
 
             if (this.gameObject.tag == "RedSpawn")
             {
-                fireRate -= 2;
+                fireRate -= 1;
             }
 
             reducedFurther = true; //fire rate has been reduced a second time
