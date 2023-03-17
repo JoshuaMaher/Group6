@@ -25,13 +25,16 @@ public class SpawnEnemy : MonoBehaviour
 
     private float randomNumber;
 
-    private int enemyCount = 0;
-
     public int fireRate;
-    public int ammo;
+    
 
+    public GameObject timer;
+    public float currentTime;
 
+    private bool hasReduced;
+    private bool reducedFurther;
 
+    public GameObject player;
 
 
     void Start()
@@ -41,9 +44,44 @@ public class SpawnEnemy : MonoBehaviour
 
     void Update()
     {
-        shootTimer += Time.deltaTime;
+        currentTime = timer.GetComponent<MinutesTimer>().timeValue; //current time from timer script on timer object
 
-        if (shootTimer > fireRate && enemyCount <= ammo )
+
+        shootTimer += Time.deltaTime; //counts up until fireRate num and then shoots
+
+  
+        if (currentTime < 90 && currentTime > 40 && !hasReduced) //if between these numbers
+        {
+            if (this.gameObject.tag == "GreenSpawn")
+            { 
+         
+                fireRate -= 2; //smaller fire rate, more it shoots
+            }
+
+            if (this.gameObject.tag == "RedSpawn")
+            {
+                fireRate -= 1;
+            }
+
+            hasReduced = true; //fire rate has reduced once
+        }
+
+        if (currentTime < 40 && !reducedFurther)
+        {
+            if (this.gameObject.tag == "GreenSpawn")
+            {
+                fireRate -= 6;
+            }
+
+            if (this.gameObject.tag == "RedSpawn")
+            {
+                fireRate -= 2;
+            }
+
+            reducedFurther = true; //fire rate has been reduced a second time
+        }
+
+        if (shootTimer > fireRate)
         {
             shootTimer = 0;
             StartCoroutine(fireBullet());
@@ -62,11 +100,14 @@ public class SpawnEnemy : MonoBehaviour
         GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.Euler(0, 0, 0));
         newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed * direction() * Time.fixedDeltaTime, 0f);
 
+        newBullet.GetComponent<EnemyFollow>().player = player;
+
         randomNumber = Random.Range(1, 12);
 
         if(randomNumber == 1)
         {
             newBullet.GetComponent<EnemyFollow>().specifiedTooth = topMolar1;
+            
         }
         if(randomNumber == 2)
         {
@@ -116,7 +157,7 @@ public class SpawnEnemy : MonoBehaviour
         newBullet.transform.localScale = new Vector2(newBullet.transform.localScale.x * direction(), newBullet.transform.localScale.y);
         yield return new WaitForSeconds(shootTimer);
 
-        enemyCount++;
+     
 
     }
 

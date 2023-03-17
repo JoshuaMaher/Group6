@@ -102,9 +102,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   specifiedTooth: {fileID: 0}
-  speed: 3
+  player: {fileID: 0}
+  speed: 2.7
   damage: 1
   toothAngle: 0
+  playerAngle: 0
 --- !u!61 &2407857193234683098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -178,4 +180,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba26dd4cf576ee4ba3cfa1f7ba25b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletLifetime: 10
+  bulletLifetime: 20

@@ -15,6 +15,8 @@ TagManager:
   - Incisor
   - FlyingEnemy
   - Gem
+  - RedSpawn
+  - GreenSpawn
   layers:
   - Default
   - TransparentFX

@@ -253,7 +253,9 @@ MonoBehaviour:
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
   fireRate: 15
-  ammo: 4
+  timer: {fileID: 683896684}
+  currentTime: 0
+  player: {fileID: 1458083276}
 --- !u!212 &42463197
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7208,7 +7210,9 @@ MonoBehaviour:
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
   fireRate: 8
-  ammo: 8
+  timer: {fileID: 683896684}
+  currentTime: 0
+  player: {fileID: 1458083276}
 --- !u!212 &1307424851
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7406,7 +7410,9 @@ MonoBehaviour:
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
   fireRate: 5
-  ammo: 12
+  timer: {fileID: 683896684}
+  currentTime: 0
+  player: {fileID: 1458083276}
 --- !u!212 &1351351680
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8208,8 +8214,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.14106223, y: 0.018538048}
-  m_Size: {x: 0.5504181, y: 0.91397476}
+  m_Offset: {x: 0.14106223, y: -0.011687832}
+  m_Size: {x: 0.5504181, y: 0.8535233}
   m_Direction: 0
 --- !u!1 &1469755873
 GameObject:
@@ -8425,7 +8431,9 @@ MonoBehaviour:
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
   fireRate: 12
-  ammo: 6
+  timer: {fileID: 683896684}
+  currentTime: 0
+  player: {fileID: 1458083276}
 --- !u!212 &1498345438
 SpriteRenderer:
   m_ObjectHideFlags: 0
