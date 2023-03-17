@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MinutesTimer : MonoBehaviour
 {
-    public float timeValue = 180;
+    public float timeValue;
     public Text timeText;
 
     void Update()

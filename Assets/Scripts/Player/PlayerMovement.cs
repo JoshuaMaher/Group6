@@ -94,4 +94,15 @@ public class PlayerMovement : MonoBehaviour
     {
         return !isGrounded();
     }
+
+    void OnTriggerEnter2D (Collider2D collision)
+    {
+        if(collision.tag == "Gem")
+        {
+            collision.gameObject.SetActive(false);
+        }
+
+    }
+
+
 }
