@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
     private Rigidbody2D body;
     private Animator anima;
-    private BoxCollider2D boxCollider;
+    private CapsuleCollider2D originalCollider;
     private float horizontalInput;
 
     [Header("Audio")]
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         anima = GetComponent<Animator>();
-        boxCollider = GetComponent<BoxCollider2D>();
+        originalCollider = GetComponent<CapsuleCollider2D>();
         
     }
 
@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded()
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(originalCollider.bounds.center, originalCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
 
         return raycastHit.collider != null;
     }
