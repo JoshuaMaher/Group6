@@ -19,6 +19,9 @@ public class BrushSwing : MonoBehaviour
     public Text KillsText;
     public int KillCount = 20;
 
+    public bool canRevive;
+    public float reviveTime;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -35,7 +38,16 @@ public class BrushSwing : MonoBehaviour
         cooldownTimer += Time.deltaTime;
         KillsText.text = KillCount.ToString();
 
+        if (canRevive)
+        {
 
+            reviveTime += Time.deltaTime;
+
+            if (reviveTime >= 20)
+            {
+                canRevive = false;
+            }
+        }
     }
 
     private void Swing()
@@ -64,20 +76,45 @@ public class BrushSwing : MonoBehaviour
 
         foreach(Collider2D tooth in hitTeeth)
         {
-            if (tooth.tag == "Molar")
+            if (tooth.tag == "Molar" || tooth.tag == "Canine" || tooth.tag == "Incisor")
             {
-                tooth.GetComponent<ToothHealth>().AddHealth(1);
+
+                if (canRevive)
+                {
+                    if (tooth.GetComponent<ToothHealth>().currentHealth == 4)
+                    {
+                        tooth.GetComponent<ToothHealth>().varnished = true;
+                    }
+
+                    if (tooth.GetComponent<ToothHealth>().currentHealth == 0 || tooth.GetComponent<ToothHealth>().currentHealth == 3)
+                    {
+                        if (tooth.GetComponent<ToothHealth>().varnished == false)
+                        {
+                            tooth.GetComponent<ToothHealth>().currentHealth = 4;
+                            tooth.GetComponent<ToothHealth>().varnished = true;
+                        }
+
+                    }
+
+                    if (tooth.GetComponent<ToothHealth>().currentHealth == 1 || tooth.GetComponent<ToothHealth>().currentHealth == 2)
+                    {
+                        tooth.GetComponent<ToothHealth>().AddHealth(1); //cleans normally if not decayed or full health
+                    }
+
+
+
+                    if (tooth.GetComponent<ToothHealth>().currentHealth == 4 && !canRevive)
+                    {
+                        tooth.GetComponent<ToothHealth>().varnished = true;
+                    }
+
+                }
+
+                else
+                    tooth.GetComponent<ToothHealth>().AddHealth(1); //cleans normally if no powerup
             }
 
-            if (tooth.tag == "Canine")
-            {
-                tooth.GetComponent<ToothHealth>().AddHealth(1);
-            }
-
-            if (tooth.tag == "Incisor")
-            {
-                tooth.GetComponent<ToothHealth>().AddHealth(1);
-            }
+          
         }
 
         SoundManager.instance.PlaySound(brushSound);
@@ -100,4 +137,18 @@ public class BrushSwing : MonoBehaviour
         body.gravityScale = 3;
         playerMove.speed = 5f;
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Gem")
+        {
+            collision.gameObject.SetActive(false);
+            canRevive = true;
+            
+            
+        }
+
+    }
+
+
 }

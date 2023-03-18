@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(isGrounded() && cooldownTimer > jumpCooldown)        
         {
-            if((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)))
+            if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))
             {
                 Jump();       
             }
@@ -95,14 +95,7 @@ public class PlayerMovement : MonoBehaviour
         return !isGrounded();
     }
 
-    void OnTriggerEnter2D (Collider2D collision)
-    {
-        if(collision.tag == "Gem")
-        {
-            collision.gameObject.SetActive(false);
-        }
-
-    }
+    
 
 
 }
