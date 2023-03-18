@@ -76,34 +76,34 @@ public class BrushSwing : MonoBehaviour
 
         foreach(Collider2D tooth in hitTeeth)
         {
-            if (tooth.tag == "Molar" || tooth.tag == "Canine" || tooth.tag == "Incisor")
+            if (tooth.tag == "Molar" || tooth.tag == "Canine" || tooth.tag == "Incisor") //if spin and hit any tooth
             {
 
-                if (canRevive)
+                if (canRevive) //if powerup is active
                 {
-                    if (tooth.GetComponent<ToothHealth>().currentHealth == 4)
+                    if (tooth.GetComponent<ToothHealth>().currentHealth == 4) 
                     {
-                        tooth.GetComponent<ToothHealth>().varnished = true;
+                        tooth.GetComponent<ToothHealth>().varnished = true; //powerup can't be used again on same tooth
                     }
 
-                    if (tooth.GetComponent<ToothHealth>().currentHealth == 0 || tooth.GetComponent<ToothHealth>().currentHealth == 3)
+                    if (tooth.GetComponent<ToothHealth>().currentHealth == 0 || tooth.GetComponent<ToothHealth>().currentHealth == 3) //if decayed or full health
                     {
-                        if (tooth.GetComponent<ToothHealth>().varnished == false)
+                        if (tooth.GetComponent<ToothHealth>().varnished == false) //if hasn't used powerup on that tooth yet
                         {
-                            tooth.GetComponent<ToothHealth>().currentHealth = 4;
+                            tooth.GetComponent<ToothHealth>().currentHealth = 4; 
                             tooth.GetComponent<ToothHealth>().varnished = true;
                         }
 
                     }
 
-                    if (tooth.GetComponent<ToothHealth>().currentHealth == 1 || tooth.GetComponent<ToothHealth>().currentHealth == 2)
+                    if (tooth.GetComponent<ToothHealth>().currentHealth == 1 || tooth.GetComponent<ToothHealth>().currentHealth == 2) //if has plaque on it
                     {
                         tooth.GetComponent<ToothHealth>().AddHealth(1); //cleans normally if not decayed or full health
                     }
 
 
 
-                    if (tooth.GetComponent<ToothHealth>().currentHealth == 4 && !canRevive)
+                    if (tooth.GetComponent<ToothHealth>().currentHealth == 4 && !canRevive) //if you clean a varnished tooth nothing happens
                     {
                         tooth.GetComponent<ToothHealth>().varnished = true;
                     }
