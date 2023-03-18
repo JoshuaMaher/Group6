@@ -79,10 +79,11 @@ public class BrushSwing : MonoBehaviour
             if (tooth.tag == "Molar" || tooth.tag == "Canine" || tooth.tag == "Incisor") //if spin and hit any tooth
             {
 
-                if (canRevive) //if powerup is active
+                if (canRevive && tooth.GetComponent<ToothHealth>().varnished == false) //if powerup is active
                 {
-                    if (tooth.GetComponent<ToothHealth>().currentHealth == 4) 
+                    if (tooth.GetComponent<ToothHealth>().currentHealth == 4)
                     {
+                        tooth.GetComponent<ToothHealth>().currentHealth = 4;
                         tooth.GetComponent<ToothHealth>().varnished = true; //powerup can't be used again on same tooth
                     }
 
@@ -90,7 +91,7 @@ public class BrushSwing : MonoBehaviour
                     {
                         if (tooth.GetComponent<ToothHealth>().varnished == false) //if hasn't used powerup on that tooth yet
                         {
-                            tooth.GetComponent<ToothHealth>().currentHealth = 4; 
+                            tooth.GetComponent<ToothHealth>().currentHealth = 4;
                             tooth.GetComponent<ToothHealth>().varnished = true;
                         }
 
@@ -100,15 +101,16 @@ public class BrushSwing : MonoBehaviour
                     {
                         tooth.GetComponent<ToothHealth>().AddHealth(1); //cleans normally if not decayed or full health
                     }
+                }
 
 
-
-                    if (tooth.GetComponent<ToothHealth>().currentHealth == 4 && !canRevive) //if you clean a varnished tooth nothing happens
+                    if (tooth.GetComponent<ToothHealth>().currentHealth == 4 && tooth.GetComponent<ToothHealth>().varnished == true) //if you clean a varnished tooth nothing happens
                     {
+                        tooth.GetComponent<ToothHealth>().currentHealth = 4;
                         tooth.GetComponent<ToothHealth>().varnished = true;
                     }
 
-                }
+                
 
                 else
                     tooth.GetComponent<ToothHealth>().AddHealth(1); //cleans normally if no powerup
