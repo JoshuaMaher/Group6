@@ -36,6 +36,9 @@ public class SpawnEnemy : MonoBehaviour
 
     public GameObject player;
 
+ 
+    private bool canShoot = true;
+
 
     void Start()
     {
@@ -44,6 +47,12 @@ public class SpawnEnemy : MonoBehaviour
 
     void Update()
     {
+
+        if(player.GetComponent<BrushSwing>().KillCount == 0)
+        {
+            canShoot = false;
+        }
+
         currentTime = timer.GetComponent<MinutesTimer>().timeValue; //current time from timer script on timer object
 
 
@@ -81,7 +90,7 @@ public class SpawnEnemy : MonoBehaviour
             reducedFurther = true; //fire rate has been reduced a second time
         }
 
-        if (shootTimer > fireRate)
+        if (shootTimer > fireRate && canShoot)
         {
             shootTimer = 0;
             StartCoroutine(fireBullet());

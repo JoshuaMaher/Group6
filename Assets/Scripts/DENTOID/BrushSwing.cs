@@ -17,7 +17,7 @@ public class BrushSwing : MonoBehaviour
     private Rigidbody2D body;
     private PlayerMovement playerMove;
     public Text KillsText;
-    public int KillCount = 20;
+    public int KillCount;
 
     public bool canRevive;
     public float reviveTime;
