@@ -22,6 +22,9 @@ public class BrushSwing : MonoBehaviour
     public bool canRevive;
     public float reviveTime;
 
+    [SerializeField] private AudioSource sparkle;
+    [SerializeField] private AudioSource killEnemy;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -61,6 +64,7 @@ public class BrushSwing : MonoBehaviour
 
                 enemy.GetComponent<EnemyHealth>().damageEnemy(brushDamage);
                 KillCount = KillCount - 1;
+                killEnemy.Play();
 
             }
 
@@ -69,6 +73,7 @@ public class BrushSwing : MonoBehaviour
 
                 enemy.GetComponent<PlaytestEnemy>().damageEnemy(brushDamage);
                 KillCount = KillCount - 1;
+                killEnemy.Play();
             }
         }
 
@@ -81,6 +86,8 @@ public class BrushSwing : MonoBehaviour
 
                 if (canRevive && tooth.GetComponent<ToothHealth>().varnished == false) //if powerup is active
                 {
+                    sparkle.Play();
+
                     if (tooth.GetComponent<ToothHealth>().currentHealth == 4)
                     {
                         tooth.GetComponent<ToothHealth>().currentHealth = 4;
@@ -99,7 +106,7 @@ public class BrushSwing : MonoBehaviour
 
                     if (tooth.GetComponent<ToothHealth>().currentHealth == 1 || tooth.GetComponent<ToothHealth>().currentHealth == 2) //if has plaque on it
                     {
-                        tooth.GetComponent<ToothHealth>().AddHealth(1); //cleans normally if not decayed or full health
+                       tooth.GetComponent<ToothHealth>().AddHealth(1); //cleans normally if not decayed or full health
                     }
                 }
 
@@ -110,10 +117,21 @@ public class BrushSwing : MonoBehaviour
                         tooth.GetComponent<ToothHealth>().varnished = true;
                     }
 
-                
+            
 
                 else
                     tooth.GetComponent<ToothHealth>().AddHealth(1); //cleans normally if no powerup
+
+                if (tooth.GetComponent<ToothHealth>().currentHealth == 1)
+                {
+                    sparkle.Play();
+                }
+
+                if(tooth.GetComponent<ToothHealth>().currentHealth == 2)
+                {
+                    sparkle.Play();
+                }
+
             }
 
           
