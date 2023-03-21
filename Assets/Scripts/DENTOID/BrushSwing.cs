@@ -25,6 +25,8 @@ public class BrushSwing : MonoBehaviour
     [SerializeField] private AudioSource sparkle;
     [SerializeField] private AudioSource killEnemy;
 
+
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
