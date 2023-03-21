@@ -916,6 +916,7 @@ GameObject:
   - component: {fileID: 133233492}
   - component: {fileID: 133233493}
   - component: {fileID: 133233494}
+  - component: {fileID: 133233495}
   m_Layer: 3
   m_Name: Platform Right
   m_TagString: Ground
@@ -986,6 +987,18 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &133233495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133233491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eacaa9bad3fed94cb921773f4823584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &140241929
 GameObject:
   m_ObjectHideFlags: 0
@@ -10497,6 +10510,7 @@ GameObject:
   - component: {fileID: 1855066833}
   - component: {fileID: 1855066832}
   - component: {fileID: 1855066834}
+  - component: {fileID: 1855066835}
   m_Layer: 3
   m_Name: Platform
   m_TagString: Ground
@@ -10616,6 +10630,18 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &1855066835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855066830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eacaa9bad3fed94cb921773f4823584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1856762258
 GameObject:
   m_ObjectHideFlags: 0
@@ -11336,6 +11362,7 @@ GameObject:
   - component: {fileID: 1961746174}
   - component: {fileID: 1961746175}
   - component: {fileID: 1961746176}
+  - component: {fileID: 1961746177}
   m_Layer: 3
   m_Name: Platform Left
   m_TagString: Ground
@@ -11406,6 +11433,18 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &1961746177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961746173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eacaa9bad3fed94cb921773f4823584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1979298222
 GameObject:
   m_ObjectHideFlags: 0

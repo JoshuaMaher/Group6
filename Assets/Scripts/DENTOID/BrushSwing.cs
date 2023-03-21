@@ -53,6 +53,9 @@ public class BrushSwing : MonoBehaviour
                 canRevive = false;
             }
         }
+
+        //PLAYS POWERED UP ANIMATION WHEN POWER UP IS ACTIVE
+        anima.SetBool("PoweredUp", canRevive == true);
     }
 
     private void Swing()
