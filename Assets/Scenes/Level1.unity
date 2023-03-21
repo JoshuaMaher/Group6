@@ -610,7 +610,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 1828716389}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
@@ -1479,7 +1479,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 535722384}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
@@ -2895,7 +2895,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 1144173070}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
@@ -3495,7 +3495,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 708720569}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
@@ -4967,7 +4967,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 1905693876}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
@@ -6256,7 +6256,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 1519939053}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
@@ -6928,7 +6928,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 543846659}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
@@ -7683,7 +7683,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 925337031}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
@@ -7823,7 +7823,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 103910896}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
@@ -9815,7 +9815,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 1945546809}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
@@ -9955,7 +9955,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 1280485478}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
@@ -11700,7 +11700,7 @@ MonoBehaviour:
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   toothSprite: {fileID: 46820582}
   invulTime: 2
-  customColour: {r: 0.33333334, g: 0.6156863, b: 0.9254902, a: 1}
+  customColour: {r: 0.52865785, g: 0.7264139, b: 0.9433962, a: 1}
   hurtColour: {r: 0.9245283, g: 0.91631514, b: 0.72741187, a: 0.1764706}
   player: {fileID: 1458083276}
   varnished: 0
