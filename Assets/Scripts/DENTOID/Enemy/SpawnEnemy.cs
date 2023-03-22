@@ -48,7 +48,7 @@ public class SpawnEnemy : MonoBehaviour
     void Update()
     {
 
-        if(player.GetComponent<BrushSwing>().KillCount == 0)
+        if(player.GetComponent<BrushSwing>().KillCount <= 0)
         {
             canShoot = false;
         }

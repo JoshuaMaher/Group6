@@ -3924,6 +3924,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeValue: 120
   timeText: {fileID: 683896688}
+  flashTimer: 0
+  player: {fileID: 1458083276}
+  customColour: {r: 0.9433962, g: 0.07475963, b: 0.22133733, a: 0.8509804}
+  killColour: {r: 0.38012746, g: 0.8962264, b: 0.23166601, a: 0.85882354}
 --- !u!114 &683896687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3965,7 +3969,7 @@ MonoBehaviour:
     m_FontStyle: 3
     m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 150
+    m_MaxSize: 200
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1

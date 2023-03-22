@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2407857193234683109}
   - component: {fileID: 6191572648135856796}
   - component: {fileID: 5237170358721330650}
+  - component: {fileID: 9037038857997500362}
   m_Layer: 8
   m_Name: RedEnemy
   m_TagString: FlyingEnemy
@@ -106,6 +107,7 @@ MonoBehaviour:
   speed: 1.2
   damage: 1
   toothAngle: 0
+  playerAngle: 0
 --- !u!61 &2407857193234683098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -180,3 +182,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletLifetime: 20
+--- !u!95 &9037038857997500362
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2407857193234683103}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7d19f180bd211b48920e190fa89a0ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
