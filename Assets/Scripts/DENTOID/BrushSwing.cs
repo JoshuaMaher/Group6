@@ -24,6 +24,7 @@ public class BrushSwing : MonoBehaviour
 
     [SerializeField] private AudioSource sparkle;
     [SerializeField] private AudioSource killEnemy;
+    [SerializeField] private ParticleSystem powerUpParticles;
 
 
 
@@ -45,12 +46,12 @@ public class BrushSwing : MonoBehaviour
 
         if (canRevive)
         {
-
             reviveTime += Time.deltaTime;
 
             if (reviveTime >= 20)
             {
                 canRevive = false;
+                powerUpParticles.Stop();
             }
         }
 
@@ -169,7 +170,7 @@ public class BrushSwing : MonoBehaviour
         {
             collision.gameObject.SetActive(false);
             canRevive = true;
-            
+            powerUpParticles.Play();
             
         }
 
