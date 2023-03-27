@@ -13484,7 +13484,7 @@ MonoBehaviour:
   timeText: {fileID: 683896688}
   flashTimer: 0
   player: {fileID: 1458083276}
-  customColour: {r: 0.9433962, g: 0.07475963, b: 0.22133733, a: 0.8509804}
+  customColour: {r: 0.9339623, g: 0.05639012, b: 0.10784217, a: 0.92156863}
   killColour: {r: 0.38012746, g: 0.8962264, b: 0.23166601, a: 0.85882354}
 --- !u!114 &683896687
 MonoBehaviour:
