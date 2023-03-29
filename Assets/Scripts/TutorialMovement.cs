@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 
-public class PlayerMovement : MonoBehaviour 
+public class TutorialMovement : MonoBehaviour 
 {
     [SerializeField] public float speed;
     [SerializeField] private float jumpness;
@@ -19,6 +19,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioSource run;
 
     public bool facingLeft = true; //checks if character is facing left
+    public GameObject timer;
+    public float currentTime; 
+    private float oldJumpness;
+    private float oldSpeed;
 
 
     //GET REFERENCES FOR RIGIDBODY AND ANIMATOR FROM GAME OBJECT 
@@ -27,14 +31,26 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anima = GetComponent<Animator>();
         originalCollider = GetComponent<CapsuleCollider2D>();
-        
+        oldJumpness = jumpness;
+        oldSpeed = speed;
     }
 
     private void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+        currentTime = timer.GetComponent<MinutesTimer>().timeValue; 
       
+        if(currentTime <= 95 && currentTime >=85)
+        {
+            speed = 0f;
+            jumpness = 0f;
+        }
+        else
+        {
+            speed = oldSpeed;
+            jumpness = oldJumpness;
+        }
 
         //FLIPS PLAYER SPRITE WHEN MOVING LEFT / RIGHT
         if(horizontalInput < 0 && !facingLeft)

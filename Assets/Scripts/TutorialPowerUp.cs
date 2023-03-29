@@ -24,7 +24,7 @@ public class TutorialPowerUp : MonoBehaviour
     {
         currentTime = timer.GetComponent<MinutesTimer>().timeValue; //sets this number equal to timeValue in timer script on timer object
 
-        if (currentTime <= 95 && !hasDecided) //Spawns at 95 secs left and random number only decided once
+        if (currentTime <= 85 && !hasDecided) //Spawns at 85 secs left and random number only decided once
         {
             randomNumber = Random.Range(1, 3); //generates random number between 1 and 3
             hasDecided = true;
