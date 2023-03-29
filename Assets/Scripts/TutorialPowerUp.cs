@@ -12,6 +12,7 @@ public class TutorialPowerUp : MonoBehaviour
     private bool hasDecided; //random number has been chosen
     [SerializeField] private ParticleSystem spawnGlow;
 
+    [SerializeField] private Vector3[] newLocation;
 
     void Start()
     {
@@ -26,25 +27,12 @@ public class TutorialPowerUp : MonoBehaviour
 
         if (currentTime <= 85 && !hasDecided) //Spawns at 85 secs left and random number only decided once
         {
-            randomNumber = Random.Range(1, 3); //generates random number between 1 and 3
+            gameObject.transform.position = newLocation[0];
             hasDecided = true;
             spawnGlow.Play();
         }
 
-        if (randomNumber == 1)
-        {
-            gameObject.transform.position = new Vector3(-0.08f, 1.23f, 0f); //spawns in at new location
-        }
         
-        if (randomNumber == 2)
-        {
-            gameObject.transform.position = new Vector3(3.67f, -1.52f, 0f);
-        }
-
-        if (randomNumber == 3)
-        {
-            gameObject.transform.position = new Vector3(-6.04f, 0.84f, 0f);
-        }
     }
 }
 
