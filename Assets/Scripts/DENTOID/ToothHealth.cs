@@ -6,7 +6,7 @@ public class ToothHealth : MonoBehaviour
     //HEALTH
     [SerializeField] private float startHealth;
     public float currentHealth;
-    private bool decay;
+    public bool decay;
 
     [Header("Audio")]
     [SerializeField] private AudioClip decayNoise;

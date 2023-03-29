@@ -157,13 +157,6 @@ public class BrushSwing : MonoBehaviour
         Gizmos.DrawWireSphere(brushPoint.position, brushRange);
     }
 
-//not needed if theres no freeze on spin anymore
-    private void FallDown()
-    {
-        body.gravityScale = 3;
-        playerMove.speed = 5f;
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Gem")
