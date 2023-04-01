@@ -126,17 +126,15 @@ public class BrushSwing : MonoBehaviour
             
 
                 else
-                    tooth.GetComponent<ToothHealth>().AddHealth(1); //cleans normally if no powerup
+                     //cleans normally if no powerup
 
-                if (tooth.GetComponent<ToothHealth>().currentHealth == 1)
+                if (tooth.GetComponent<ToothHealth>().currentHealth == 1 || tooth.GetComponent<ToothHealth>().currentHealth == 2)
                 {
                     sparkle.Play();
+                    tooth.GetComponent<ToothHealth>().AddHealth(1);
                 }
 
-                if(tooth.GetComponent<ToothHealth>().currentHealth == 2)
-                {
-                    sparkle.Play();
-                }
+               
 
             }
 
