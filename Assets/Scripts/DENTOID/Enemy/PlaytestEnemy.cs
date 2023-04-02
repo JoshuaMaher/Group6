@@ -6,14 +6,14 @@ public class PlaytestEnemy : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 3;
     public int currentHealth;
+    private Animator anima;
+    private EnemyFollow speedage;
  
-   
-
-
     private void Awake()
     {
         currentHealth = maxHealth;
-       
+        anima = GetComponent<Animator>();
+        speedage = GetComponent<EnemyFollow>();
     }
 
     public void damageEnemy(int damage)
@@ -25,14 +25,13 @@ public class PlaytestEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             //Deactivate();
-            Die();
+            anima.SetTrigger("Death");
+            speedage.speed = 0f;
         }
     }
 
-    private void Die()
+    public void Die()
     {
-
-
         //GetComponent<Collider2D>().enabled = false;
         //this.enabled = false;
         Destroy(gameObject);

@@ -8,7 +8,7 @@ public class EnemyFollow : MonoBehaviour
     public GameObject player;
 
     public float speed; //How fast enemy moves towards tooth, can be changed in inspector
-
+    private Animator anima;
 
     private float toothDist;
     private float playerDist;
@@ -22,10 +22,10 @@ public class EnemyFollow : MonoBehaviour
 
     SpriteRenderer spi;
 
-    void Start()
+    void Awake()
     {
         spi = GetComponent<SpriteRenderer>();
-      
+        anima = GetComponent<Animator>();
     }
 
     void Update()
@@ -100,8 +100,8 @@ public class EnemyFollow : MonoBehaviour
         if (collision.gameObject == specifiedTooth)
         {
             collision.GetComponent<ToothHealth>().TakeDamage(damage);
-            Destroy(gameObject);
-           
+            anima.SetTrigger("Death");
+            speed = 0f;
         }
 
     }
