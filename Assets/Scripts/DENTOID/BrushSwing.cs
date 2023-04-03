@@ -69,7 +69,14 @@ public class BrushSwing : MonoBehaviour
             {
 
                 enemy.GetComponent<EnemyHealth>().damageEnemy(brushDamage);
-                KillCount = KillCount - 1;
+                if (KillCount > 0)
+                {
+                    KillCount = KillCount - 1;
+                }
+                if (KillCount <= 0)
+                {
+                    KillCount = 0;
+                }
                 killEnemy.Play();
 
             }
@@ -78,7 +85,14 @@ public class BrushSwing : MonoBehaviour
             {
 
                 enemy.GetComponent<PlaytestEnemy>().damageEnemy(brushDamage);
-                KillCount = KillCount - 1;
+                if (KillCount > 0)
+                {
+                    KillCount = KillCount - 1;
+                }
+                if (KillCount <= 0)
+                {
+                    KillCount = 0;
+                }
                 killEnemy.Play();
             }
         }
