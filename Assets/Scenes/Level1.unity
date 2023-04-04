@@ -13905,8 +13905,8 @@ GameObject:
   m_Component:
   - component: {fileID: 883231296}
   - component: {fileID: 883231295}
-  - component: {fileID: 883231294}
   - component: {fileID: 883231293}
+  - component: {fileID: 883231297}
   m_Layer: 0
   m_Name: Gem
   m_TagString: Gem
@@ -13930,34 +13930,6 @@ MonoBehaviour:
   randomNumber: 0
   currentTime: 0
   spawnGlow: {fileID: 576398383}
---- !u!60 &883231294
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883231291}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.5773587}
-      - {x: -0.5, y: -0.28866667}
-      - {x: 0.5, y: -0.28866667}
 --- !u!212 &883231295
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13999,7 +13971,7 @@ SpriteRenderer:
   m_SortingLayerID: -2074347995
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c2893253d28e90b42ab92f3390c0960c, type: 3}
   m_Color: {r: 0.8301887, g: 0.08145245, b: 0.65547407, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14019,13 +13991,29 @@ Transform:
   m_GameObject: {fileID: 883231291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.18, y: -3.91, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 576398385}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &883231297
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883231291}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.255
 --- !u!1 &902283353
 GameObject:
   m_ObjectHideFlags: 0
