@@ -124,14 +124,10 @@ public class BrushSwing : MonoBehaviour
 
                     }
 
-                    if (tooth.GetComponent<ToothHealth>().currentHealth == 1 || tooth.GetComponent<ToothHealth>().currentHealth == 2) //if has plaque on it
-                    {
-                       tooth.GetComponent<ToothHealth>().AddHealth(1); //cleans normally if not decayed or full health
-                    }
+                    
                 }
 
-
-                    if (tooth.GetComponent<ToothHealth>().currentHealth == 4 && tooth.GetComponent<ToothHealth>().varnished == true) //if you clean a varnished tooth nothing happens
+                if (tooth.GetComponent<ToothHealth>().currentHealth == 4 && tooth.GetComponent<ToothHealth>().varnished == true) //if you clean a varnished tooth nothing happens
                     {
                         tooth.GetComponent<ToothHealth>().currentHealth = 4;
                         tooth.GetComponent<ToothHealth>().varnished = true;

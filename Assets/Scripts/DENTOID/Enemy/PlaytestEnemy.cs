@@ -8,12 +8,14 @@ public class PlaytestEnemy : MonoBehaviour
     public int currentHealth;
     private Animator anima;
     private EnemyFollow speedage;
+    private BoxCollider2D enemyCol;
  
     private void Awake()
     {
         currentHealth = maxHealth;
         anima = GetComponent<Animator>();
         speedage = GetComponent<EnemyFollow>();
+        enemyCol = GetComponent<BoxCollider2D>();
     }
 
     public void damageEnemy(int damage)
@@ -42,5 +44,8 @@ public class PlaytestEnemy : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-
+    public void TurnOffCollider()
+    {
+        enemyCol.enabled = false;
+    }
 }
