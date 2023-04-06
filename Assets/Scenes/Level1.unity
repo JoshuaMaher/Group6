@@ -13085,7 +13085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958e05bab641d81439a29eca9c582d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeValue: 60
+  timeValue: 120
   timeText: {fileID: 683896688}
   flashTimer: 0
   player: {fileID: 1458083276}
