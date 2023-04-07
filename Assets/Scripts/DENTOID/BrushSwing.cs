@@ -15,7 +15,6 @@ public class BrushSwing : MonoBehaviour
     [SerializeField] private AudioClip brushSound;
     [SerializeField] private int brushDamage = 1;
     private Rigidbody2D body;
-    private PlayerMovement playerMove;
     public Text KillsText;
     public int KillCount;
 
@@ -25,14 +24,13 @@ public class BrushSwing : MonoBehaviour
     [SerializeField] private AudioSource sparkle;
     [SerializeField] private AudioSource killEnemy;
     [SerializeField] private ParticleSystem powerUpParticles;
-
+    
 
 
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
         anima = GetComponent<Animator>();
-        playerMove = GetComponent<PlayerMovement>();
     }
 
 

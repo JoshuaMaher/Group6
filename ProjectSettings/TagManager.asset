@@ -17,6 +17,7 @@ TagManager:
   - Gem
   - RedSpawn
   - GreenSpawn
+  - Foamer
   layers:
   - Default
   - TransparentFX

@@ -30,7 +30,7 @@ public class ToothHealth : MonoBehaviour
 
     public bool varnished; //has tooth been cleaned with powerup?
     public bool isInvincible;
-    
+    public GameObject foamer;
 
     private void Awake()
     {
@@ -104,6 +104,7 @@ public class ToothHealth : MonoBehaviour
     {
         if (currentHealth != 0 || player.GetComponent<BrushSwing>().canRevive == true)
         {
+            foamer.GetComponent<FoamerScript>().foamNow = true;
             currentHealth = Mathf.Clamp(currentHealth + _amount, 0, startHealth);
         }
     }
