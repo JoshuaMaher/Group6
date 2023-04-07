@@ -20,8 +20,8 @@ public class ToothHealth : MonoBehaviour
     private SpriteRenderer spriteRen;
     
     //invunerability
-    public float invulTime = 4;
-    private int flashNum = 5;
+    public float invulTime = 2;
+    private int flashNum = 4;
 
     public Color customColour; //blue powerup colour
     public Color hurtColour; //invincibility colour
@@ -118,9 +118,9 @@ public class ToothHealth : MonoBehaviour
         for (int i = 0; i < flashNum; i++)
         {
             this.gameObject.GetComponent<SpriteRenderer>().color = hurtColour; //change colour 
-            yield return new WaitForSeconds(invulTime / (flashNum * 2));
+            yield return new WaitForSeconds(invulTime / (flashNum * 1.8f));
             this.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
-            yield return new WaitForSeconds(invulTime / (flashNum * 2));
+            yield return new WaitForSeconds(invulTime / (flashNum * 1.8f));
         }
         Physics2D.IgnoreLayerCollision(7, 8, false);
         isInvincible = false;
