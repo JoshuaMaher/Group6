@@ -24,8 +24,6 @@ public class BrushSwing : MonoBehaviour
     [SerializeField] private AudioSource sparkle;
     [SerializeField] private AudioSource killEnemy;
     [SerializeField] private ParticleSystem powerUpParticles;
-    
-
 
     private void Awake()
     {
@@ -105,6 +103,7 @@ public class BrushSwing : MonoBehaviour
                 if (canRevive && tooth.GetComponent<ToothHealth>().varnished == false) //if powerup is active
                 {
                     sparkle.Play();
+                    tooth.GetComponent<ToothHealth>().foamer.GetComponent<FoamerScript>().foamNow = true;
 
                     if (tooth.GetComponent<ToothHealth>().currentHealth == 4)
                     {
@@ -140,6 +139,7 @@ public class BrushSwing : MonoBehaviour
                 {
                     sparkle.Play();
                     tooth.GetComponent<ToothHealth>().AddHealth(1);
+                    tooth.GetComponent<ToothHealth>().foamer.GetComponent<FoamerScript>().foamNow = true;
                 }
 
                
