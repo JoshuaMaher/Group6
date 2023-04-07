@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TutorialScript : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class TutorialScript : MonoBehaviour
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(false);
-            TutorialText.text = "Use the left and right arrow keys to move. Press Enter";
+            TutorialText.text = "Use the ARROW Keys to move left and right. Press Enter";
             Time.timeScale = 0;
             GumGuard = 1;
         }
@@ -33,57 +34,57 @@ public class TutorialScript : MonoBehaviour
         if (TimeValue > 5 && TimeValue < 5.1)
         {
             TutorialScene.SetActive(true);
-            TutorialText.text = "Use the up arrow to jump. Press Enter";
+            TutorialText.text = "Use the UP ARROW to jump. Press Enter";
             Time.timeScale = 0;
             GumGuard = 1;
         }
-        if (TimeValue > 7 && TimeValue < 7.1)
-        {
-            TutorialScene.SetActive(true);
-            TutorialText.text = "Spin using the space bar. Press Enter";
-            Time.timeScale = 0;
-            GumGuard = 1;
-        }
-        if (TimeValue > 10 && TimeValue < 10.1)
+        if (TimeValue > 14 && TimeValue < 14.1)
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
-            TutorialText.text = "Oh no! an enemy is attacking a tooth use your spin to kill it. Press Enter";
-            TutorialText2.text = "It clings on to the plaque on the tooth and releases acid to damage it, use your spin to clean the teeth.";
+            TutorialText.text = "Use SPACE BAR to spin and clean the tooth. Press Enter";
+            TutorialText2.text = "Oh no! A bacteria is attacking the tooth. It clings to the sticky plaque and releases acid.";
+            Time.timeScale = 0;
+            GumGuard = 1;
+        }
+        if (TimeValue >  34 && TimeValue < 34.1)
+        {
+            TutorialScene.SetActive(true);
+            SecondTextBox.SetActive(true);
+            TutorialText.text = "The spiky green bacteria move faster. Press Enter";
+            TutorialText2.text = "Double the enemies means double the cleaning.";
             Time.timeScale = 0;
             GumGuard = 1;
         }
 
-        if (TimeValue > 15 && TimeValue < 15.1)
+        if (TimeValue > 59 && TimeValue < 59.1)
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
-            TutorialText.text = "If two enemys attach to the teeth it'll take double the cleaning. Press Enter";
-            TutorialText2.text = "Be carefull not to let three enemies reach a tooth otherwise, IT WILL BECOME DECAYED!";
+            TutorialText.text = "Not without high fluoride toothpaste. With the powerup, use SPACE BAR to reverse the decay. Press Enter";
+            TutorialText2.text = "The tooth is decayed! it can't be brought back.";
             Time.timeScale = 0;
             GumGuard = 1;
         }
 
-        if (TimeValue > 20 && TimeValue < 20.1)
+        if (TimeValue > 63 && TimeValue < 63.1)
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
-            TutorialText.text = "This is a power up, when applied to the teeth they get a blue shine which acts as a protective shield. Press Enter";
-            TutorialText2.text = "This power up only works once on each tooth.";
+            TutorialText.text = "The powerup doesn't last forever. Press Enter";
+            TutorialText2.text = "The fluoride strengthens the enamel: your tooth's protective shield.";
             Time.timeScale = 0;
             GumGuard = 1;
         }
 
-        if (TimeValue > 23 && TimeValue < 23.1)
+        if (TimeValue > 90 && TimeValue < 90.1)
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(false);
-            Timer.SetActive(true);
-            KillCounter.SetActive(true);
-            TutorialText.text = "You have 2:00 minutes to kill 20 enemies GET PROTECTING THOSE TEETH! Press Enter";
-            TutorialText2.text = "Be carefull not to let three enemies reach a tooth otherwise, IT WILL BECOME DECAYED!";
+            TutorialText.text = "You will have 2 minutes to kill 20 enemies. Use leftover time to clean any damaged teeth.Press Enter";
+            TutorialText2.text = "That concludes your training.";
             Time.timeScale = 0;
-            GumGuard = 1;
+            GumGuard = 2;
         }
 
         if (GumGuard == 1)
@@ -97,7 +98,14 @@ public class TutorialScript : MonoBehaviour
             }
 
         }
-
+        if (GumGuard == 2)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                SceneManager.LoadScene("Level1");
+                Time.timeScale = 1;
+            }
+        }
         TimeValue += Time.deltaTime;       
     }       
            
