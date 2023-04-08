@@ -524,7 +524,7 @@ MonoBehaviour:
   health2: {fileID: 1507272685, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
   health1: {fileID: -472422106, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
   health0: {fileID: -419080352, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
@@ -4593,7 +4593,7 @@ MonoBehaviour:
   health2: {fileID: -306431113, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
   health1: {fileID: 76690192, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
   health0: {fileID: 1803839207, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
@@ -4983,7 +4983,7 @@ MonoBehaviour:
   health2: {fileID: 1507272685, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
   health1: {fileID: -472422106, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
   health0: {fileID: -419080352, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
@@ -5260,7 +5260,7 @@ MonoBehaviour:
   health2: {fileID: 1507272685, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
   health1: {fileID: -472422106, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
   health0: {fileID: -419080352, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
@@ -15636,7 +15636,7 @@ MonoBehaviour:
   health2: {fileID: -306431113, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
   health1: {fileID: 76690192, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
   health0: {fileID: 1803839207, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
@@ -16946,7 +16946,7 @@ MonoBehaviour:
   health2: {fileID: -11709337, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
   health1: {fileID: 2105050140, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
   health0: {fileID: -1203311790, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
@@ -17322,7 +17322,7 @@ MonoBehaviour:
   health2: {fileID: 1507272685, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
   health1: {fileID: -472422106, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
   health0: {fileID: -419080352, guid: edd1addee32ab34488a5c0d3f1766ab5, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
@@ -19301,7 +19301,7 @@ MonoBehaviour:
   health2: {fileID: -11709337, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
   health1: {fileID: 2105050140, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
   health0: {fileID: -1203311790, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
@@ -19645,7 +19645,7 @@ MonoBehaviour:
   health2: {fileID: -11709337, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
   health1: {fileID: 2105050140, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
   health0: {fileID: -1203311790, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
@@ -20041,7 +20041,7 @@ MonoBehaviour:
   health2: {fileID: -11709337, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
   health1: {fileID: 2105050140, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
   health0: {fileID: -1203311790, guid: 577eb4ca1bbefe64fa43cb6b0c592aac, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
@@ -20579,7 +20579,7 @@ MonoBehaviour:
   health2: {fileID: -306431113, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
   health1: {fileID: 76690192, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
   health0: {fileID: 1803839207, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
@@ -22104,7 +22104,7 @@ MonoBehaviour:
   health2: {fileID: -306431113, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
   health1: {fileID: 76690192, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
   health0: {fileID: 1803839207, guid: 1d5d2dad9381c154bb7d3ef350882c87, type: 3}
-  invulTime: 2
+  invulTime: 0
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
   hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
   player: {fileID: 424378221}
