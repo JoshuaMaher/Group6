@@ -8,6 +8,7 @@ public class TutorialMovement : MonoBehaviour
     [SerializeField] private float jumpness;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float jumpCooldown;
+    [SerializeField] private GameObject Grey;
     private float cooldownTimer = Mathf.Infinity;
     private Rigidbody2D body;
     private Animator anima;
@@ -45,33 +46,39 @@ public class TutorialMovement : MonoBehaviour
         {
             speed = 0f;
             jumpness = 0f;
+            Grey.SetActive(true);
         }
         else if(TimeValue >= 15 && TimeValue <= 22)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
+            Grey.SetActive(false);
         }
 
         if(TimeValue >= 22 && TimeValue <= 32)
         {
             speed = 0f;
             jumpness = 0f;
+            Grey.SetActive(true);
         }
         else if(TimeValue >= 32 && TimeValue <= 42)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
+            Grey.SetActive(false);
         }
 
         if(TimeValue >= 42 && TimeValue <= 55)
         {
             speed = 0f;
             jumpness = 0f;
+            Grey.SetActive(true);
         }
         else if(TimeValue >= 55)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
+            Grey.SetActive(false);
         }
 
         //FLIPS PLAYER SPRITE WHEN MOVING LEFT / RIGHT
