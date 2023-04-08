@@ -27,6 +27,8 @@ public class TutorialMovement : MonoBehaviour
 
     public bool isFrozen;
 
+    private bool canJump = true;
+
 
     //GET REFERENCES FOR RIGIDBODY AND ANIMATOR FROM GAME OBJECT 
     private void Awake()
@@ -50,6 +52,7 @@ public class TutorialMovement : MonoBehaviour
             jumpness = 0f;
             Grey.SetActive(true);
             isFrozen = true;
+            canJump = false;
         }
         else if(TimeValue >= 15 && TimeValue <= 22)
         {
@@ -57,6 +60,7 @@ public class TutorialMovement : MonoBehaviour
             jumpness = oldJumpness;
             Grey.SetActive(false);
             isFrozen = false;
+            canJump = true;
         }
 
         if(TimeValue >= 22 && TimeValue <= 32)
@@ -65,6 +69,7 @@ public class TutorialMovement : MonoBehaviour
             jumpness = 0f;
             Grey.SetActive(true);
             isFrozen = true;
+            canJump = false;
         }
         else if(TimeValue >= 32 && TimeValue <= 42)
         {
@@ -72,6 +77,7 @@ public class TutorialMovement : MonoBehaviour
             jumpness = oldJumpness;
             Grey.SetActive(false);
             isFrozen = false;
+            canJump = true;
         }
 
         if(TimeValue >= 42 && TimeValue <= 55)
@@ -80,6 +86,7 @@ public class TutorialMovement : MonoBehaviour
             jumpness = 0f;
             Grey.SetActive(true);
             isFrozen = true;
+            canJump = false;
         }
         else if(TimeValue >= 55)
         {
@@ -87,6 +94,7 @@ public class TutorialMovement : MonoBehaviour
             jumpness = oldJumpness;
             Grey.SetActive(false);
             isFrozen = false;
+            canJump = true;
         }
 
         //FLIPS PLAYER SPRITE WHEN MOVING LEFT / RIGHT
@@ -115,6 +123,7 @@ public class TutorialMovement : MonoBehaviour
         {
             if((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))
             {
+                if(canJump)
                 Jump();       
             }
         }
