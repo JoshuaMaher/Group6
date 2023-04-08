@@ -20,9 +20,9 @@ public class TutorialMovement : MonoBehaviour
 
     public bool facingLeft = true; //checks if character is facing left
     public GameObject timer;
-    public float currentTime; 
     private float oldJumpness;
     private float oldSpeed;
+    public float TimeValue = 0;
 
 
     //GET REFERENCES FOR RIGIDBODY AND ANIMATOR FROM GAME OBJECT 
@@ -35,18 +35,40 @@ public class TutorialMovement : MonoBehaviour
         oldSpeed = speed;
     }
 
-    private void Update()
+    void Update()
     {
+        TimeValue += Time.deltaTime;  
         horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
-        currentTime = timer.GetComponent<MinutesTimer>().timeValue; 
       
-        if(currentTime <= 95 && currentTime >=85)
+        if(TimeValue >= 8 && TimeValue <= 15)
         {
             speed = 0f;
             jumpness = 0f;
         }
-        else
+        else if(TimeValue >= 15 && TimeValue <= 22)
+        {
+            speed = oldSpeed;
+            jumpness = oldJumpness;
+        }
+
+        if(TimeValue >= 22 && TimeValue <= 32)
+        {
+            speed = 0f;
+            jumpness = 0f;
+        }
+        else if(TimeValue >= 32 && TimeValue <= 42)
+        {
+            speed = oldSpeed;
+            jumpness = oldJumpness;
+        }
+
+        if(TimeValue >= 42 && TimeValue <= 55)
+        {
+            speed = 0f;
+            jumpness = 0f;
+        }
+        else if(TimeValue >= 55)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;

@@ -8,7 +8,7 @@ public class TutorialPowerUp : MonoBehaviour
     public GameObject timer;
     public float randomNumber;
 
-    public float currentTime; //number value equal to current timer value
+    public float TimeValue = 0;
     private bool hasDecided; //random number has been chosen
     [SerializeField] private ParticleSystem spawnGlow;
 
@@ -16,16 +16,16 @@ public class TutorialPowerUp : MonoBehaviour
 
     void Start()
     {
-        gameObject.transform.position = new Vector3(-10f, 1.23f, 0f); //sets gem off screen
+        gameObject.transform.position = new Vector3(-100f, 1.23f, 0f); //sets gem off screen
         
     }
 
     
     void Update()
     {
-        currentTime = timer.GetComponent<MinutesTimer>().timeValue; //sets this number equal to timeValue in timer script on timer object
+        TimeValue += Time.deltaTime;  
 
-        if (currentTime <= 85 && !hasDecided) //Spawns at 85 secs left and random number only decided once
+        if (TimeValue >= 55 && !hasDecided) 
         {
             gameObject.transform.position = newLocation[0];
             hasDecided = true;
