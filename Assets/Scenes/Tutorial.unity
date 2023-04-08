@@ -2688,6 +2688,7 @@ GameObject:
   - component: {fileID: 424378224}
   - component: {fileID: 424378223}
   - component: {fileID: 424378222}
+  - component: {fileID: 424378233}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -3029,6 +3030,7 @@ MonoBehaviour:
   sparkle: {fileID: 424378223}
   killEnemy: {fileID: 424378222}
   powerUpParticles: {fileID: 892247890}
+  canSpin: 1
 --- !u!95 &424378227
 Animator:
   serializedVersion: 5
@@ -3163,6 +3165,21 @@ MonoBehaviour:
   facingLeft: 1
   timer: {fileID: 355335381}
   TimeValue: 0
+  isFrozen: 0
+--- !u!114 &424378233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424378221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6faf0329cf513e4e811ec341927f687, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brush: {fileID: 424378226}
+  tutorial: {fileID: 424378232}
 --- !u!1 &459267226
 GameObject:
   m_ObjectHideFlags: 0

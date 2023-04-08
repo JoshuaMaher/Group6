@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool facingLeft = true; //checks if character is facing left
 
+    
 
     //GET REFERENCES FOR RIGIDBODY AND ANIMATOR FROM GAME OBJECT 
     private void Awake()

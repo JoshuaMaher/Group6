@@ -25,6 +25,8 @@ public class BrushSwing : MonoBehaviour
     [SerializeField] private AudioSource killEnemy;
     [SerializeField] private ParticleSystem powerUpParticles;
 
+    public bool canSpin = true;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -34,9 +36,9 @@ public class BrushSwing : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && cooldownTimer > brushCooldown)
+        if (Input.GetKeyDown(KeyCode.Space) && cooldownTimer > brushCooldown && canSpin == true)
             Swing();
-        
+
         cooldownTimer += Time.deltaTime;
         KillsText.text = KillCount.ToString();
 

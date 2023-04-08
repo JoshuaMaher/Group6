@@ -17877,6 +17877,7 @@ MonoBehaviour:
   sparkle: {fileID: 1458083290}
   killEnemy: {fileID: 1458083289}
   powerUpParticles: {fileID: 549903737}
+  canSpin: 1
 --- !u!82 &1458083287
 AudioSource:
   m_ObjectHideFlags: 0

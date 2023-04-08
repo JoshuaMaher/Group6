@@ -25,6 +25,8 @@ public class TutorialMovement : MonoBehaviour
     private float oldSpeed;
     public float TimeValue = 0;
 
+    public bool isFrozen;
+
 
     //GET REFERENCES FOR RIGIDBODY AND ANIMATOR FROM GAME OBJECT 
     private void Awake()
@@ -47,12 +49,14 @@ public class TutorialMovement : MonoBehaviour
             speed = 0f;
             jumpness = 0f;
             Grey.SetActive(true);
+            isFrozen = true;
         }
         else if(TimeValue >= 15 && TimeValue <= 22)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
             Grey.SetActive(false);
+            isFrozen = false;
         }
 
         if(TimeValue >= 22 && TimeValue <= 32)
@@ -60,12 +64,14 @@ public class TutorialMovement : MonoBehaviour
             speed = 0f;
             jumpness = 0f;
             Grey.SetActive(true);
+            isFrozen = true;
         }
         else if(TimeValue >= 32 && TimeValue <= 42)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
             Grey.SetActive(false);
+            isFrozen = false;
         }
 
         if(TimeValue >= 42 && TimeValue <= 55)
@@ -73,18 +79,20 @@ public class TutorialMovement : MonoBehaviour
             speed = 0f;
             jumpness = 0f;
             Grey.SetActive(true);
+            isFrozen = true;
         }
         else if(TimeValue >= 55)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
             Grey.SetActive(false);
+            isFrozen = false;
         }
 
         //FLIPS PLAYER SPRITE WHEN MOVING LEFT / RIGHT
-        if(horizontalInput < 0 && !facingLeft)
+        if(horizontalInput < 0 && !facingLeft && !isFrozen)
             flip();
-        else if(horizontalInput > 0 && facingLeft)
+        else if(horizontalInput > 0 && facingLeft && !isFrozen)
             flip();
 
 
