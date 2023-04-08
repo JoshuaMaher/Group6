@@ -747,13 +747,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 1828716389}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &96061430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2040,13 +2040,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 0}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &235663451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4880,13 +4880,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 1144173070}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &570971462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5735,13 +5735,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 708720569}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &646309066
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7972,13 +7972,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 1905693876}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &875521383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10061,13 +10061,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 1519939053}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &1094754491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11553,13 +11553,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 543846659}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &1262689868
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12825,13 +12825,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 925337031}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &1424854258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13089,13 +13089,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 103910896}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &1439112606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16115,13 +16115,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 1945546809}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &1721063132
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16256,13 +16256,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 1280485478}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &1741524613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16669,7 +16669,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1688, y: 416}
+  m_AnchoredPosition: {x: -1683, y: 290}
   m_SizeDelta: {x: 381.76, y: 132.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1780221338
@@ -19407,13 +19407,13 @@ MonoBehaviour:
   health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
   health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
   health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
-  toothSprite: {fileID: 46820582}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
   player: {fileID: 0}
   varnished: 0
   isInvincible: 0
+  foamer: {fileID: 0}
 --- !u!61 &2057465861
 BoxCollider2D:
   m_ObjectHideFlags: 0

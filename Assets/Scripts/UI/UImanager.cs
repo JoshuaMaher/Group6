@@ -62,4 +62,10 @@ public class UImanager : MonoBehaviour
     {
         SoundManager.instance.ChangeVolumeMusic(0.2f);
     }
+
+    public void PauseButton()
+    {
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0;   
+    }
 }
