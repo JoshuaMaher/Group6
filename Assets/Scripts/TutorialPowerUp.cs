@@ -25,7 +25,7 @@ public class TutorialPowerUp : MonoBehaviour
     {
         TimeValue += Time.deltaTime;  
 
-        if (TimeValue >= 55 && !hasDecided) 
+        if (TimeValue >= 43 && !hasDecided) 
         {
             gameObject.transform.position = newLocation[0];
             hasDecided = true;

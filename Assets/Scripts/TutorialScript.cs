@@ -47,7 +47,7 @@ public class TutorialScript : MonoBehaviour
             Time.timeScale = 0;
             GumGuard = 1;
         }
-        if (TimeValue >  34 && TimeValue < 34.1)
+        if (TimeValue >  29 && TimeValue < 29.1)
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
@@ -57,7 +57,7 @@ public class TutorialScript : MonoBehaviour
             GumGuard = 1;
         }
 
-        if (TimeValue > 59 && TimeValue < 59.1)
+        if (TimeValue > 47 && TimeValue < 47.1)
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
@@ -67,7 +67,7 @@ public class TutorialScript : MonoBehaviour
             GumGuard = 1;
         }
 
-        if (TimeValue > 63 && TimeValue < 63.1)
+        if (TimeValue > 56 && TimeValue < 56.1)
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
@@ -77,7 +77,7 @@ public class TutorialScript : MonoBehaviour
             GumGuard = 1;
         }
 
-        if (TimeValue > 90 && TimeValue < 90.1)
+        if (TimeValue > 63 && TimeValue < 63.1)
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(false);

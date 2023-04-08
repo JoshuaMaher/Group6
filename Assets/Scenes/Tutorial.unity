@@ -2599,7 +2599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootPos: {fileID: 416642696}
   bullet: {fileID: 2407857193234683103, guid: 639aa4ec8fe736147bd0bca77b67b3c3, type: 3}
-  goTime: 22
+  goTime: 20
   timer: {fileID: 355335381}
   player: {fileID: 424378221}
   tutorialTooth: {fileID: 124012792}
@@ -3415,7 +3415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootPos: {fileID: 468866720}
   bullet: {fileID: 2407857193234683103, guid: d404716052ebd584498531205a2ce4a9, type: 3}
-  goTime: 28
+  goTime: 21
   timer: {fileID: 355335381}
   player: {fileID: 424378221}
   tutorialTooth: {fileID: 124012792}
@@ -15943,7 +15943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootPos: {fileID: 1072014957}
   bullet: {fileID: 2407857193234683103, guid: d404716052ebd584498531205a2ce4a9, type: 3}
-  goTime: 51
+  goTime: 37
   timer: {fileID: 355335381}
   player: {fileID: 424378221}
   tutorialTooth: {fileID: 1252233469}
@@ -16447,7 +16447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootPos: {fileID: 1137018637}
   bullet: {fileID: 2407857193234683103, guid: 639aa4ec8fe736147bd0bca77b67b3c3, type: 3}
-  goTime: 45
+  goTime: 36
   timer: {fileID: 355335381}
   player: {fileID: 424378221}
   tutorialTooth: {fileID: 1252233469}
@@ -18759,7 +18759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootPos: {fileID: 1452955757}
   bullet: {fileID: 2407857193234683103, guid: d404716052ebd584498531205a2ce4a9, type: 3}
-  goTime: 44
+  goTime: 37
   timer: {fileID: 355335381}
   player: {fileID: 424378221}
   tutorialTooth: {fileID: 1252233469}

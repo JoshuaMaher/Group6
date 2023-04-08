@@ -54,7 +54,7 @@ public class TutorialMovement : MonoBehaviour
             isFrozen = true;
             canJump = false;
         }
-        else if(TimeValue >= 15 && TimeValue <= 22)
+        else if(TimeValue >= 15 && TimeValue <= 21)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
@@ -63,7 +63,7 @@ public class TutorialMovement : MonoBehaviour
             canJump = true;
         }
 
-        if(TimeValue >= 22 && TimeValue <= 32)
+        if(TimeValue >= 21 && TimeValue <= 28)
         {
             speed = 0f;
             jumpness = 0f;
@@ -71,7 +71,7 @@ public class TutorialMovement : MonoBehaviour
             isFrozen = true;
             canJump = false;
         }
-        else if(TimeValue >= 32 && TimeValue <= 42)
+        else if(TimeValue >= 28 && TimeValue <= 37)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
@@ -80,7 +80,7 @@ public class TutorialMovement : MonoBehaviour
             canJump = true;
         }
 
-        if(TimeValue >= 42 && TimeValue <= 55)
+        if(TimeValue >= 37 && TimeValue <= 45)
         {
             speed = 0f;
             jumpness = 0f;
@@ -88,7 +88,7 @@ public class TutorialMovement : MonoBehaviour
             isFrozen = true;
             canJump = false;
         }
-        else if(TimeValue >= 55)
+        else if(TimeValue >= 45)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
