@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 577eb4ca1bbefe64fa43cb6b0c592aac
+guid: 1d5d2dad9381c154bb7d3ef350882c87
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 97
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kanine sprite sheet_0
+      name: molar sprite sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45bdcc793b143bd47b82db9ebeaf4757
-      internalID: -11709337
+      spriteID: 8d2e51d62b6653e4ebfae3e6b30cf56f
+      internalID: -306431113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kanine sprite sheet_1
+      name: molar sprite sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1673b9d08dec194094336c406cf428f
-      internalID: 2105050140
+      spriteID: e7fab7d7959fa0442b49cba4d921120a
+      internalID: 76690192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kanine sprite sheet_2
+      name: molar sprite sheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -185,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 874296065412f8542ae0973ad02af5bb
-      internalID: -1203311790
+      spriteID: d0721b73a74490d4c83cae2889112a76
+      internalID: 1803839207
       vertices: []
       indices: 
       edges: []
@@ -202,9 +202,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      kanine sprite sheet_0: -11709337
-      kanine sprite sheet_1: 2105050140
-      kanine sprite sheet_2: -1203311790
+      molar sprite sheet_0: -306431113
+      molar sprite sheet_1: 76690192
+      molar sprite sheet_2: 1803839207
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
