@@ -26,7 +26,7 @@ public class TutorialScript : MonoBehaviour
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(false);
-            TutorialText.text = "Use the ARROW Keys to move left and right. Press Enter";
+            TutorialText.text = "Use the ARROW KEYS to move left and right. Press Enter";
             Time.timeScale = 0;
             GumGuard = 1;
         }
@@ -51,7 +51,7 @@ public class TutorialScript : MonoBehaviour
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
-            TutorialText.text = "The spiky green bacteria move faster. Press Enter";
+            TutorialText.text = "The spiky green bacteria move faster. Use SPACE BAR to KILL them. Press Enter";
             TutorialText2.text = "Double the enemies means double the cleaning.";
             Time.timeScale = 0;
             GumGuard = 1;
@@ -61,7 +61,7 @@ public class TutorialScript : MonoBehaviour
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
-            TutorialText.text = "Not without high fluoride toothpaste. With the powerup, use SPACE BAR to reverse the decay. Press Enter";
+            TutorialText.text = "Not without high fluoride toothpaste. With the POWERUP, use SPACE BAR to reverse the decay. Press Enter";
             TutorialText2.text = "The tooth is decayed! it can't be brought back.";
             Time.timeScale = 0;
             GumGuard = 1;
