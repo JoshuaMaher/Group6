@@ -19,7 +19,8 @@ public class BrushSwing : MonoBehaviour
     public int KillCount;
 
     public bool canRevive;
-    public float reviveTime;
+    private float reviveTime;
+    public float powerupDuration;
 
     [SerializeField] private AudioSource sparkle;
     [SerializeField] private AudioSource killEnemy;
@@ -46,7 +47,7 @@ public class BrushSwing : MonoBehaviour
         {
             reviveTime += Time.deltaTime;
 
-            if (reviveTime >= 20)
+            if (reviveTime >= powerupDuration)
             {
                 canRevive = false;
                 powerUpParticles.Stop();

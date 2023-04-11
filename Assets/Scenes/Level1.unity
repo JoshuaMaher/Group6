@@ -17973,7 +17973,7 @@ MonoBehaviour:
   KillsText: {fileID: 365254931}
   KillCount: 20
   canRevive: 0
-  reviveTime: 0
+  powerupDuration: 30
   sparkle: {fileID: 1458083290}
   killEnemy: {fileID: 1458083289}
   powerUpParticles: {fileID: 549903737}
