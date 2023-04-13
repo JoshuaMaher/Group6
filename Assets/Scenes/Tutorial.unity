@@ -2241,6 +2241,8 @@ MonoBehaviour:
   player: {fileID: 424378221}
   customColour: {r: 0.9433962, g: 0.07475963, b: 0.22133733, a: 0.8509804}
   killColour: {r: 0.38012746, g: 0.8962264, b: 0.23166601, a: 0.85882354}
+  Beep: {fileID: 0}
+  red: 0
 --- !u!114 &355335383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3026,7 +3028,7 @@ MonoBehaviour:
   KillsText: {fileID: 846660100}
   KillCount: 20
   canRevive: 0
-  reviveTime: 0
+  powerupDuration: 0
   sparkle: {fileID: 424378223}
   killEnemy: {fileID: 424378222}
   powerUpParticles: {fileID: 892247890}
@@ -4568,6 +4570,7 @@ GameObject:
   - component: {fileID: 741069288}
   - component: {fileID: 741069287}
   - component: {fileID: 741069286}
+  - component: {fileID: 741069289}
   m_Layer: 10
   m_Name: Bot Molar 1
   m_TagString: Molar
@@ -4636,7 +4639,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6597938, y: 0.6597938}
     newSize: {x: 0.45, y: 0.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4697,6 +4700,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &741069289
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741069284}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b869042f0a969244fa2bece22c5fb485, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &771183648
 GameObject:
   m_ObjectHideFlags: 0

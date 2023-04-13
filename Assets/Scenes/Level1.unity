@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 96061431}
   - component: {fileID: 96061430}
   - component: {fileID: 96061429}
+  - component: {fileID: 96061432}
   m_Layer: 10
   m_Name: Bot Incisor 1
   m_TagString: Incisor
@@ -521,17 +522,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 6ea43e4fb0d03be46a8f54d43178feed, type: 3}
-  health2: {fileID: -1947163413, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
-  health1: {fileID: -1622991222, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
-  health0: {fileID: 205459189, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 1350717170}
+  canRes: {fileID: 1458083286}
 --- !u!61 &96061430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -610,6 +608,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &96061432
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96061427}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7cb77c87ff454e34a800d006d2de92ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &111298974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1453,7 @@ GameObject:
   - component: {fileID: 235663452}
   - component: {fileID: 235663451}
   - component: {fileID: 235663450}
+  - component: {fileID: 235663453}
   m_Layer: 10
   m_Name: Bot Canine 1
   m_TagString: Canine
@@ -1475,17 +1494,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7fdecdb0706cc904dbe5ba11b0e15265, type: 3}
-  health2: {fileID: -1737402357, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
-  health1: {fileID: 508210452, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
-  health0: {fileID: -2003014482, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 562062427}
+  canRes: {fileID: 1458083286}
 --- !u!61 &235663451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1564,6 +1580,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &235663453
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235663448}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc9a63f36369d89469c9fed42ae93a34, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &242798533
 GameObject:
   m_ObjectHideFlags: 0
@@ -7949,6 +7985,7 @@ GameObject:
   - component: {fileID: 570971463}
   - component: {fileID: 570971462}
   - component: {fileID: 570971461}
+  - component: {fileID: 570971464}
   m_Layer: 10
   m_Name: Top Molar 1
   m_TagString: Molar
@@ -7989,17 +8026,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7c3ee148a86b52b43a16f9c56bf82598, type: 3}
-  health2: {fileID: 1722021427, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
-  health1: {fileID: 1791753985, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
-  health0: {fileID: -335766145, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 292291562}
+  canRes: {fileID: 1458083286}
 --- !u!61 &570971462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8078,6 +8112,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &570971464
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570971459}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b869042f0a969244fa2bece22c5fb485, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &576398382
 GameObject:
   m_ObjectHideFlags: 0
@@ -13495,6 +13549,7 @@ GameObject:
   - component: {fileID: 646309067}
   - component: {fileID: 646309066}
   - component: {fileID: 646309065}
+  - component: {fileID: 646309068}
   m_Layer: 10
   m_Name: Top Incisor 1
   m_TagString: Incisor
@@ -13535,17 +13590,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 6ea43e4fb0d03be46a8f54d43178feed, type: 3}
-  health2: {fileID: -1947163413, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
-  health1: {fileID: -1622991222, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
-  health0: {fileID: 205459189, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 1199123386}
+  canRes: {fileID: 1458083286}
 --- !u!61 &646309066
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13624,6 +13676,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &646309068
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646309063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7cb77c87ff454e34a800d006d2de92ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &646835400
 GameObject:
   m_ObjectHideFlags: 0
@@ -15091,6 +15163,7 @@ GameObject:
   - component: {fileID: 875521384}
   - component: {fileID: 875521383}
   - component: {fileID: 875521382}
+  - component: {fileID: 875521385}
   m_Layer: 10
   m_Name: Bot Canine 2
   m_TagString: Canine
@@ -15131,17 +15204,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7fdecdb0706cc904dbe5ba11b0e15265, type: 3}
-  health2: {fileID: -1737402357, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
-  health1: {fileID: 508210452, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
-  health0: {fileID: -2003014482, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 1756684575}
+  canRes: {fileID: 1458083286}
 --- !u!61 &875521383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15220,6 +15290,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &875521385
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875521380}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc9a63f36369d89469c9fed42ae93a34, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &883231291
 GameObject:
   m_ObjectHideFlags: 0
@@ -16384,6 +16474,7 @@ GameObject:
   - component: {fileID: 1094754492}
   - component: {fileID: 1094754491}
   - component: {fileID: 1094754490}
+  - component: {fileID: 1094754493}
   m_Layer: 10
   m_Name: Bot Molar 1
   m_TagString: Molar
@@ -16424,17 +16515,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7c3ee148a86b52b43a16f9c56bf82598, type: 3}
-  health2: {fileID: 1722021427, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
-  health1: {fileID: 1791753985, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
-  health0: {fileID: -335766145, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 1758468811}
+  canRes: {fileID: 1458083286}
 --- !u!61 &1094754491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16513,6 +16601,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1094754493
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094754488}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b869042f0a969244fa2bece22c5fb485, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1118629136
 GameObject:
   m_ObjectHideFlags: 0
@@ -17008,6 +17116,7 @@ GameObject:
   - component: {fileID: 1262689869}
   - component: {fileID: 1262689868}
   - component: {fileID: 1262689867}
+  - component: {fileID: 1262689870}
   m_Layer: 10
   m_Name: Top Canine 1
   m_TagString: Canine
@@ -17048,17 +17157,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7fdecdb0706cc904dbe5ba11b0e15265, type: 3}
-  health2: {fileID: -1737402357, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
-  health1: {fileID: 508210452, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
-  health0: {fileID: -2003014482, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 209148850}
+  canRes: {fileID: 1458083286}
 --- !u!61 &1262689868
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17137,6 +17243,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1262689870
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262689865}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc9a63f36369d89469c9fed42ae93a34, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1276618463
 GameObject:
   m_ObjectHideFlags: 0
@@ -17969,6 +18095,7 @@ GameObject:
   - component: {fileID: 1424854259}
   - component: {fileID: 1424854258}
   - component: {fileID: 1424854257}
+  - component: {fileID: 1424854260}
   m_Layer: 10
   m_Name: Bot Incisor 2
   m_TagString: Incisor
@@ -18009,17 +18136,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 6ea43e4fb0d03be46a8f54d43178feed, type: 3}
-  health2: {fileID: -1947163413, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
-  health1: {fileID: -1622991222, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
-  health0: {fileID: 205459189, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 1713251144}
+  canRes: {fileID: 1458083286}
 --- !u!61 &1424854258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18098,6 +18222,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1424854260
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424854255}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7cb77c87ff454e34a800d006d2de92ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1439112603
 GameObject:
   m_ObjectHideFlags: 0
@@ -18110,6 +18254,7 @@ GameObject:
   - component: {fileID: 1439112607}
   - component: {fileID: 1439112606}
   - component: {fileID: 1439112605}
+  - component: {fileID: 1439112608}
   m_Layer: 10
   m_Name: Top Molar 2
   m_TagString: Molar
@@ -18150,17 +18295,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7c3ee148a86b52b43a16f9c56bf82598, type: 3}
-  health2: {fileID: 1722021427, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
-  health1: {fileID: 1791753985, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
-  health0: {fileID: -335766145, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 816803162}
+  canRes: {fileID: 1458083286}
 --- !u!61 &1439112606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18239,6 +18381,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1439112608
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439112603}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b869042f0a969244fa2bece22c5fb485, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1440350415
 GameObject:
   m_ObjectHideFlags: 0
@@ -20057,6 +20219,7 @@ GameObject:
   - component: {fileID: 1721063133}
   - component: {fileID: 1721063132}
   - component: {fileID: 1721063131}
+  - component: {fileID: 1721063134}
   m_Layer: 10
   m_Name: Top Incisor 2
   m_TagString: Incisor
@@ -20097,17 +20260,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 6ea43e4fb0d03be46a8f54d43178feed, type: 3}
-  health2: {fileID: -1947163413, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
-  health1: {fileID: -1622991222, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
-  health0: {fileID: 205459189, guid: 6e7b9b052773f2941aecd8e4eef45a56, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 828967193}
+  canRes: {fileID: 1458083286}
 --- !u!61 &1721063132
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20186,6 +20346,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1721063134
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721063129}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7cb77c87ff454e34a800d006d2de92ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1741524610
 GameObject:
   m_ObjectHideFlags: 0
@@ -20198,6 +20378,7 @@ GameObject:
   - component: {fileID: 1741524614}
   - component: {fileID: 1741524613}
   - component: {fileID: 1741524612}
+  - component: {fileID: 1741524615}
   m_Layer: 10
   m_Name: Bot Molar 2
   m_TagString: Molar
@@ -20238,17 +20419,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7c3ee148a86b52b43a16f9c56bf82598, type: 3}
-  health2: {fileID: 1722021427, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
-  health1: {fileID: 1791753985, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
-  health0: {fileID: -335766145, guid: 5fcd3f169f9c93a4e840d72fdb8af0de, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 1853080941}
+  canRes: {fileID: 1458083286}
 --- !u!61 &1741524613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20327,6 +20505,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1741524615
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741524610}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b869042f0a969244fa2bece22c5fb485, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1752383250
 GameObject:
   m_ObjectHideFlags: 0
@@ -22071,6 +22269,7 @@ GameObject:
   - component: {fileID: 2057465862}
   - component: {fileID: 2057465861}
   - component: {fileID: 2057465860}
+  - component: {fileID: 2057465863}
   m_Layer: 10
   m_Name: Top Canine 2
   m_TagString: Canine
@@ -22111,17 +22310,14 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7fdecdb0706cc904dbe5ba11b0e15265, type: 3}
-  health2: {fileID: -1737402357, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
-  health1: {fileID: 508210452, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
-  health0: {fileID: -2003014482, guid: cc35cc9dceb5d35479f2c61822ec0062, type: 3}
   invulTime: 2
   customColour: {r: 0.22352941, g: 0.5529412, b: 0.85490197, a: 1}
-  hurtColour: {r: 0.8784314, g: 0.8784314, b: 0.24859613, a: 0.0627451}
+  hurtColour: {r: 1, g: 1, b: 1, a: 0.3529412}
   player: {fileID: 1458083276}
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 1841170201}
+  canRes: {fileID: 1458083286}
 --- !u!61 &2057465861
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22200,6 +22396,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2057465863
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057465858}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc9a63f36369d89469c9fed42ae93a34, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &2082974217
 GameObject:
   m_ObjectHideFlags: 0
