@@ -15247,6 +15247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Screen
       objectReference: {fileID: 0}
+    - target: {fileID: 353870943900525655, guid: 47510b0e5b863cd469b76c66c3dcb410, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47510b0e5b863cd469b76c66c3dcb410, type: 3}
 --- !u!1001 &1073093941975969883
@@ -15343,6 +15347,10 @@ PrefabInstance:
     - target: {fileID: 1073093942375305507, guid: 839f07482b79a41488bfde0208e13d17, type: 3}
       propertyPath: m_Name
       value: Main Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073093942375305507, guid: 839f07482b79a41488bfde0208e13d17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 839f07482b79a41488bfde0208e13d17, type: 3}
@@ -15441,6 +15449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: How to Play screen
       objectReference: {fileID: 0}
+    - target: {fileID: 1435548245225446654, guid: f9f1d59bbc09459468d8ec75751c7348, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9f1d59bbc09459468d8ec75751c7348, type: 3}
 --- !u!1001 &4377864945507763329
@@ -15537,6 +15549,10 @@ PrefabInstance:
     - target: {fileID: 4377864945376453395, guid: ca4ad4b19c1e8f249b938da44eebee07, type: 3}
       propertyPath: m_Name
       value: generic button
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377864945376453395, guid: ca4ad4b19c1e8f249b938da44eebee07, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca4ad4b19c1e8f249b938da44eebee07, type: 3}
@@ -15647,6 +15663,10 @@ PrefabInstance:
     - target: {fileID: 8318725692988298466, guid: 88f9a4940cf3c3d4aa15c8db47d59b29, type: 3}
       propertyPath: m_Name
       value: Victory Screen Background
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318725692988298466, guid: 88f9a4940cf3c3d4aa15c8db47d59b29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8318725692988298493, guid: 88f9a4940cf3c3d4aa15c8db47d59b29, type: 3}
       propertyPath: m_Pivot.x
