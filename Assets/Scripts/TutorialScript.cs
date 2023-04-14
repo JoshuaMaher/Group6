@@ -10,6 +10,10 @@ public class TutorialScript : MonoBehaviour
     [SerializeField] private GameObject SecondTextBox;
     [SerializeField] private GameObject KillCounter;
     [SerializeField] private GameObject Timer;
+    [SerializeField] private GameObject Happy;
+    [SerializeField] private GameObject Angry;
+    [SerializeField] private GameObject ExtremeHappy;
+    [SerializeField] private GameObject Stress;
     [SerializeField] private Text TutorialText;
     [SerializeField] private Text TutorialText2;
     public float TimeValue = 0;
@@ -26,6 +30,10 @@ public class TutorialScript : MonoBehaviour
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(false);
+            Happy.SetActive(true);
+            Angry.SetActive(false);
+            ExtremeHappy.SetActive(false);
+            Stress.SetActive(false);
             TutorialText.text = "Use the ARROW KEYS to move left and right. Press Enter";
             Time.timeScale = 0;
             GumGuard = 1;
@@ -34,6 +42,10 @@ public class TutorialScript : MonoBehaviour
         if (TimeValue > 5 && TimeValue < 5.1)
         {
             TutorialScene.SetActive(true);
+            Happy.SetActive(true);
+            Angry.SetActive(false);
+            ExtremeHappy.SetActive(false);
+            Stress.SetActive(false);
             TutorialText.text = "Use the UP ARROW to jump. Press Enter";
             Time.timeScale = 0;
             GumGuard = 1;
@@ -42,6 +54,10 @@ public class TutorialScript : MonoBehaviour
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
+            Happy.SetActive(false);
+            Angry.SetActive(false);
+            ExtremeHappy.SetActive(false);
+            Stress.SetActive(true);
             TutorialText.text = "Use SPACE BAR to spin and clean the tooth. Press Enter";
             TutorialText2.text = "Oh no! A bacteria is attacking the tooth. It clings to the sticky plaque and releases acid.";
             Time.timeScale = 0;
@@ -51,6 +67,10 @@ public class TutorialScript : MonoBehaviour
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
+            Happy.SetActive(false);
+            Angry.SetActive(false);
+            ExtremeHappy.SetActive(false);
+            Stress.SetActive(true);
             TutorialText.text = "The spiky green bacteria move faster. Use SPACE BAR to KILL them. Press Enter";
             TutorialText2.text = "Double the enemies means double the cleaning.";
             Time.timeScale = 0;
@@ -61,6 +81,10 @@ public class TutorialScript : MonoBehaviour
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
+            Happy.SetActive(false);
+            Angry.SetActive(false);
+            ExtremeHappy.SetActive(true);
+            Stress.SetActive(false);
             TutorialText.text = "Not without high fluoride toothpaste. With the POWERUP, use SPACE BAR to reverse the decay. Press Enter";
             TutorialText2.text = "The tooth is decayed! it can't be brought back.";
             Time.timeScale = 0;
@@ -71,6 +95,10 @@ public class TutorialScript : MonoBehaviour
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
+            Happy.SetActive(true);
+            Angry.SetActive(false);
+            ExtremeHappy.SetActive(false);
+            Stress.SetActive(false);
             TutorialText.text = "The powerup doesn't last forever. Press Enter";
             TutorialText2.text = "The fluoride strengthens the enamel: your tooth's protective shield.";
             Time.timeScale = 0;
@@ -80,7 +108,11 @@ public class TutorialScript : MonoBehaviour
         if (TimeValue > 63 && TimeValue < 63.1)
         {
             TutorialScene.SetActive(true);
-            SecondTextBox.SetActive(false);
+            SecondTextBox.SetActive(true);
+            Happy.SetActive(true);
+            Angry.SetActive(false);
+            ExtremeHappy.SetActive(false);
+            Stress.SetActive(false);
             TutorialText.text = "You will have 2 minutes to kill 20 enemies. Use leftover time to clean any damaged teeth.Press Enter";
             TutorialText2.text = "That concludes your training.";
             Time.timeScale = 0;
