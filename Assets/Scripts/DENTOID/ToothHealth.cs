@@ -12,11 +12,11 @@ public class ToothHealth : MonoBehaviour
     [SerializeField] private AudioClip decayNoise;
     [SerializeField] private AudioClip hurtNoise;
 
-    [Header("Sprite")]
-    [SerializeField] private Sprite health3;
-    [SerializeField] private Sprite health2;
-    [SerializeField] private Sprite health1;  
-    [SerializeField] private Sprite health0;  
+    //[Header("Sprite")]
+    //[SerializeField] private Sprite health3;
+    //[SerializeField] private Sprite health2;
+    //[SerializeField] private Sprite health1;  
+    //[SerializeField] private Sprite health0;  
     private SpriteRenderer spriteRen;
     
     //invunerability
@@ -31,47 +31,61 @@ public class ToothHealth : MonoBehaviour
     public bool varnished; //has tooth been cleaned with powerup?
     public bool isInvincible;
     public GameObject foamer;
+    private Animator anima;
+    [SerializeField] BrushSwing canRes;
 
     private void Awake()
     {
         currentHealth = startHealth;
         decay = false;
         spriteRen = GetComponent<SpriteRenderer>();
+        anima = GetComponent<Animator>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         //PLAQUE
         
         if (currentHealth == 4)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = health3;
-            spriteRen.color = customColour;
+            //this.gameObject.GetComponent<SpriteRenderer>().sprite = health3;
+            //spriteRen.color = customColour;
+            anima.SetTrigger("4health");
         }
          if(currentHealth == 3)
         {
             //DEFAULT TOOTH SPRITE
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = health3;
-            spriteRen.color = Color.white;
+            //this.gameObject.GetComponent<SpriteRenderer>().sprite = health3;
+            //spriteRen.color = Color.white;
+            anima.SetTrigger("3health");
         }
         else if(currentHealth == 2)
         {
             //SPRITE WITH PLAQUE ON TOOTH
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = health2;
-            spriteRen.color = Color.white;
+            //this.gameObject.GetComponent<SpriteRenderer>().sprite = health2;
+            //spriteRen.color = Color.white;
+            anima.SetTrigger("2health");
         }
         else if(currentHealth == 1)
         {
             //SPRITE WITH MORE PLAQUE ON TOOTH
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = health1;
-            spriteRen.color = Color.white;
+            //this.gameObject.GetComponent<SpriteRenderer>().sprite = health1;
+            //spriteRen.color = Color.white;
+            anima.SetTrigger("1health");
         }
         else if(currentHealth <= 0 && decay)
         {
             //SPRITE WITH DECAYED TOOTH
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = health0;
-            spriteRen.color = Color.white;
+            //this.gameObject.GetComponent<SpriteRenderer>().sprite = health0;
+            //spriteRen.color = Color.white;
+            anima.SetTrigger("0health");
+            
+            if(canRes.canRevive == true)
+            {
+                anima.SetTrigger("glowdecay");
+            }
         }
+        
     }
 
     public void TakeDamage(float _damage)
@@ -110,14 +124,14 @@ public class ToothHealth : MonoBehaviour
 
    
 
-        private IEnumerator Invunerability()
+        public IEnumerator Invunerability()
     {
         Physics2D.IgnoreLayerCollision(7, 8, true);
         isInvincible = true;
         //DURATION OF INVUNERABILITY
         for (int i = 0; i < flashNum; i++)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().color = hurtColour; //change colour 
+            this.gameObject.GetComponent<SpriteRenderer>().color = hurtColour; //change colour, E0E03F, i changed it to just transparency for testing
             yield return new WaitForSeconds(invulTime / (flashNum * 1.8f));
             this.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
             yield return new WaitForSeconds(invulTime / (flashNum * 1.8f));
