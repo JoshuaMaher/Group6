@@ -104,16 +104,7 @@ public class TutorialMovement : MonoBehaviour
             flip();
 
 
-        //Play Run Sound
-        if ((Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)))
-        {
-            run.Play();
-        }
-
-        if ((Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow)))
-        {
-            run.Stop();
-        }
+       
 
         //SETTING ANIMATOR PARAMETERS
         anima.SetBool("run", horizontalInput != 0);
