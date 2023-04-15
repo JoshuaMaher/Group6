@@ -6,12 +6,9 @@ using UnityEngine.UI;
 
 public class handleButton : MonoBehaviour
 {
-  public InputField theTextField;
 
   public void buttonBehaviour()
   {
-    string userID = theTextField.text.ToString(); 
-    PlayerPrefs.SetString("Name", userID);
     SceneManager.LoadScene("Level1");
   }
 
@@ -38,5 +35,12 @@ public class handleButton : MonoBehaviour
   {
         SceneManager.LoadScene("Level1");
   }
-
+  public void Tutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+  public void HowToPlay()
+    {
+        SceneManager.LoadScene("How to play screen");
+    }
 }

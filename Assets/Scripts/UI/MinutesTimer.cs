@@ -22,6 +22,7 @@ public class MinutesTimer : MonoBehaviour
     public Color killColour;
     private float flashInterval;
     [SerializeField] public AudioSource Beep;
+    [SerializeField] public GameObject GameOver;
     public bool red;
 
 
@@ -151,7 +152,8 @@ public class MinutesTimer : MonoBehaviour
         if(timeToDisplay < 0)
         {
             timeToDisplay = 0;
-            SceneManager.LoadScene("Complete");
+            GameOver.SetActive(true);
+            Time.timeScale = 0;
         }
 
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);

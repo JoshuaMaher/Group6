@@ -30,6 +30,7 @@ public class UImanager : MonoBehaviour
 
     public void Restart()
     {
+        endScreen.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -67,5 +68,9 @@ public class UImanager : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0;   
+    }
+    public void HowToPlay()
+    {
+        SceneManager.LoadScene("how to play screen");
     }
 }
