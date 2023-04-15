@@ -668,10 +668,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 6ea43e4fb0d03be46a8f54d43178feed, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -679,6 +675,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &96061430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1621,10 +1618,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7fdecdb0706cc904dbe5ba11b0e15265, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -1632,6 +1625,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &235663451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3366,10 +3360,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7c3ee148a86b52b43a16f9c56bf82598, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -3377,6 +3367,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &570971462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3693,6 +3684,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1384591522}
   - {fileID: 1543048948}
   - {fileID: 20974672}
   - {fileID: 2018484766}
@@ -4095,10 +4087,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 6ea43e4fb0d03be46a8f54d43178feed, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -4106,6 +4094,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &646309066
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6223,10 +6212,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7fdecdb0706cc904dbe5ba11b0e15265, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -6234,6 +6219,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &875521383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7635,10 +7621,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7c3ee148a86b52b43a16f9c56bf82598, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -7646,6 +7628,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &1094754491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8710,10 +8693,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7fdecdb0706cc904dbe5ba11b0e15265, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -8721,6 +8700,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &1262689868
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9640,6 +9620,11 @@ Transform:
   m_Father: {fileID: 242798534}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1384591522 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+  m_PrefabInstance: {fileID: 8495014471119227923}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1393205738
 GameObject:
   m_ObjectHideFlags: 0
@@ -9898,10 +9883,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 6ea43e4fb0d03be46a8f54d43178feed, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -9909,6 +9890,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &1424854258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10039,10 +10021,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7c3ee148a86b52b43a16f9c56bf82598, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -10050,6 +10028,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &1439112606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10285,7 +10264,6 @@ MonoBehaviour:
     m_Bits: 8
   jumpCooldown: 0.5
   jumpNoise: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
-  run: {fileID: 1458083287}
   facingLeft: 1
 --- !u!95 &1458083282
 Animator:
@@ -12371,10 +12349,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 6ea43e4fb0d03be46a8f54d43178feed, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -12382,6 +12356,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &1721063132
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12512,10 +12487,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7c3ee148a86b52b43a16f9c56bf82598, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -12523,6 +12494,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &1741524613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14700,10 +14672,6 @@ MonoBehaviour:
   decay: 0
   decayNoise: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
   hurtNoise: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
-  health3: {fileID: 21300000, guid: 7fdecdb0706cc904dbe5ba11b0e15265, type: 3}
-  health2: {fileID: 21300000, guid: 52edd99451a0a440a8638e8d1d9a565d, type: 3}
-  health1: {fileID: 21300000, guid: 750af71cd7cb043608f1c052510f52d8, type: 3}
-  health0: {fileID: 21300000, guid: 8c754f1f2bdc943c19af65e5cb79543b, type: 3}
   invulTime: 4
   customColour: {r: 0, g: 0, b: 0, a: 0}
   hurtColour: {r: 0, g: 0, b: 0, a: 0}
@@ -14711,6 +14679,7 @@ MonoBehaviour:
   varnished: 0
   isInvincible: 0
   foamer: {fileID: 0}
+  canRes: {fileID: 0}
 --- !u!61 &2057465861
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15169,7 +15138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 353870943900525652, guid: 47510b0e5b863cd469b76c66c3dcb410, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 353870943900525652, guid: 47510b0e5b863cd469b76c66c3dcb410, type: 3}
       propertyPath: m_AnchorMax.x
@@ -15270,7 +15239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1073093942375305506, guid: 839f07482b79a41488bfde0208e13d17, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1073093942375305506, guid: 839f07482b79a41488bfde0208e13d17, type: 3}
       propertyPath: m_AnchorMax.x
@@ -15371,7 +15340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1435548245225446649, guid: f9f1d59bbc09459468d8ec75751c7348, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1435548245225446649, guid: f9f1d59bbc09459468d8ec75751c7348, type: 3}
       propertyPath: m_AnchorMax.x
@@ -15472,7 +15441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4377864945376453394, guid: ca4ad4b19c1e8f249b938da44eebee07, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4377864945376453394, guid: ca4ad4b19c1e8f249b938da44eebee07, type: 3}
       propertyPath: m_AnchorMax.x
@@ -15678,7 +15647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8318725692988298493, guid: 88f9a4940cf3c3d4aa15c8db47d59b29, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8318725692988298493, guid: 88f9a4940cf3c3d4aa15c8db47d59b29, type: 3}
       propertyPath: m_AnchorMax.x
@@ -15754,3 +15723,100 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88f9a4940cf3c3d4aa15c8db47d59b29, type: 3}
+--- !u!1001 &8495014471119227923
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 613797248}
+    m_Modifications:
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 413.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 289.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3169.0002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 369
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386865, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495014472486386866, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
+      propertyPath: m_Name
+      value: Panel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 268c095e7e4b5b04cbe255a898f5ed3f, type: 3}
