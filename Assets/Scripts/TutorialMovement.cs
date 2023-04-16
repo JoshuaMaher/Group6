@@ -46,7 +46,7 @@ public class TutorialMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
       
-        if(TimeValue >= 8 && TimeValue <= 15)
+        if(TimeValue >= 8 && TimeValue <= 13)
         {
             speed = 0f;
             jumpness = 0f;
@@ -54,7 +54,7 @@ public class TutorialMovement : MonoBehaviour
             isFrozen = true;
             canJump = false;
         }
-        else if(TimeValue >= 15 && TimeValue <= 21)
+        else if(TimeValue >= 13 && TimeValue <= 21)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
@@ -63,7 +63,7 @@ public class TutorialMovement : MonoBehaviour
             canJump = true;
         }
 
-        if(TimeValue >= 21 && TimeValue <= 28)
+        if(TimeValue >= 21 && TimeValue <= 25)
         {
             speed = 0f;
             jumpness = 0f;
@@ -71,7 +71,7 @@ public class TutorialMovement : MonoBehaviour
             isFrozen = true;
             canJump = false;
         }
-        else if(TimeValue >= 28 && TimeValue <= 37)
+        else if(TimeValue >= 25 && TimeValue <= 37)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
@@ -80,7 +80,7 @@ public class TutorialMovement : MonoBehaviour
             canJump = true;
         }
 
-        if(TimeValue >= 37 && TimeValue <= 45)
+        if(TimeValue >= 37 && TimeValue <= 43)
         {
             speed = 0f;
             jumpness = 0f;
@@ -88,7 +88,7 @@ public class TutorialMovement : MonoBehaviour
             isFrozen = true;
             canJump = false;
         }
-        else if(TimeValue >= 45)
+        else if(TimeValue >= 43)
         {
             speed = oldSpeed;
             jumpness = oldJumpness;
