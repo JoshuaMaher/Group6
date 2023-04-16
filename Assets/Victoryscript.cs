@@ -20,7 +20,9 @@ public class Victoryscript : MonoBehaviour
     [SerializeField] public GameObject TimerText;
     [SerializeField] public GameObject HappyFace;
     [SerializeField] public GameObject VeryHappyFace;
-
+    [SerializeField] public GameObject Star;
+    [SerializeField] public GameObject Star2;
+    [SerializeField] public GameObject Star3;
     public Text VictoryText;
     private string Victory;
     private float TeethClean;
@@ -109,17 +111,15 @@ public class Victoryscript : MonoBehaviour
         {
             TeethClean += 1;
         }
-        VictoryChecker();
-        TeethClean = 0;
-    }
-    private void VictoryChecker()
-    {
         if (TeethClean >= 0 && TeethClean <= 6)
         {
             Victory = "you cleaned some teeth";
             VictoryText.text = Victory;
             HappyFace.SetActive(true);
             VeryHappyFace.SetActive(false);
+            Star.SetActive(true);
+            Star2.SetActive(false);
+            Star3.SetActive(false);
         }
         if (TeethClean >= 7 && TeethClean < 12)
         {
@@ -127,6 +127,9 @@ public class Victoryscript : MonoBehaviour
             VictoryText.text = Victory;
             HappyFace.SetActive(true);
             VeryHappyFace.SetActive(false);
+            Star.SetActive(true);
+            Star2.SetActive(true);
+            Star3.SetActive(false);
         }
 
         if (TeethClean == 12)
@@ -135,7 +138,10 @@ public class Victoryscript : MonoBehaviour
             VictoryText.text = Victory;
             HappyFace.SetActive(false);
             VeryHappyFace.SetActive(true);
+            Star.SetActive(true);
+            Star2.SetActive(true);
+            Star3.SetActive(true);
         }
+        TeethClean = 0;
     }
-            
 }
