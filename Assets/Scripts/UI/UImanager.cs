@@ -32,6 +32,7 @@ public class UImanager : MonoBehaviour
     {
         endScreen.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 
     public void Menu()
