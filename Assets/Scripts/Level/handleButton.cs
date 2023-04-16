@@ -10,6 +10,7 @@ public class handleButton : MonoBehaviour
   public void buttonBehaviour()
   {
     SceneManager.LoadScene("Level1");
+        Time.timeScale = 1;
   }
 
   public void Options()
