@@ -94,13 +94,13 @@ public class BrushSwing : MonoBehaviour
                 if (KillCount <= 0)
                 {
                     KillCount = 0;
-                    if(TimerValue.timeValue <=15)
+                    if(TimerValue.timeValue <=20)
                     {
                         TimerValue.timeValue = TimerValue.timeValue;
                     }
                     else
                     {
-                        TimerValue.timeValue = 15;
+                        TimerValue.timeValue = 20;
                     }
                     
                 }

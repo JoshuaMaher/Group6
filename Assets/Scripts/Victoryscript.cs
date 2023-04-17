@@ -23,9 +23,16 @@ public class Victoryscript : MonoBehaviour
     [SerializeField] public GameObject Star;
     [SerializeField] public GameObject Star2;
     [SerializeField] public GameObject Star3;
+    [SerializeField] public GameObject Star4;
+    [SerializeField] public GameObject Star5;
+    [SerializeField] public GameObject Player;
+
     public Text VictoryText;
+    public Text BannerText;
     private string Victory;
+    private string Banner;
     private float TeethClean;
+    private float TeethShielded;
 
     private ToothHealth BotMolar1Health;
     private ToothHealth BotCanine1Health;
@@ -40,6 +47,7 @@ public class Victoryscript : MonoBehaviour
     private ToothHealth TopIncisor2Health;
     private ToothHealth TopCanine2Health;
     private ToothHealth TopMolar2Health;
+    private BrushSwing Killcount;
 
     void Update()
     {
@@ -56,6 +64,7 @@ public class Victoryscript : MonoBehaviour
         TopIncisor2Health = TopIncisor2.GetComponent<ToothHealth>();
         TopCanine2Health = TopCanine2.GetComponent<ToothHealth>();
         TopMolar2Health = TopMolar2.GetComponent<ToothHealth>();
+        Killcount = Player.GetComponent<BrushSwing>();
         VictoryScreen();
     }
 
@@ -111,37 +120,133 @@ public class Victoryscript : MonoBehaviour
         {
             TeethClean += 1;
         }
-        if (TeethClean >= 0 && TeethClean <= 6)
+        
+        
+        if (TopCanine1Health.currentHealth == 4)
         {
-            Victory = "you cleaned some teeth";
+            TeethShielded += 1;
+        }
+        if (TopCanine2Health.currentHealth == 4)
+        {
+            TeethShielded += 1;
+        }
+        if (TopIncisor1Health.currentHealth == 4)
+        {
+            TeethShielded += 1;
+        }
+        if (TopIncisor2Health.currentHealth == 4)
+        {
+            TeethShielded += 1;
+        }
+        if (TopMolar1Health.currentHealth == 4)
+        {
+            TeethShielded += 1;
+        }
+        if (TopMolar2Health.currentHealth == 4)
+        {
+            TeethShielded += 1;
+        }
+        if (BotCanine1Health.currentHealth == 4)
+        {
+            TeethShielded += 1;
+        }
+        if (BotCanine2Health.currentHealth == 4)
+        {
+            TeethShielded += 1;
+        }
+        if (BotIncisor1Health.currentHealth == 4)
+        {
+            TeethShielded += 1;
+        }
+        if (BotIncisor2Health.currentHealth == 4)
+        {
+            TeethShielded += 1;
+        }
+        if (BotMolar1Health.currentHealth == 4)
+        {
+            TeethShielded += 1;
+        }
+        if (BotMolar2Health.currentHealth == 4)
+        {
+            TeethShielded += 1;
+        }
+        
+        if (Killcount.KillCount > 0)
+        {
+            Victory = "You didn't kill all the enemies. Try killing the enemies first, then cleaning teeth later.";
             VictoryText.text = Victory;
+            Banner = "Better Luck Next Time";
+            BannerText.text = Banner;
             HappyFace.SetActive(true);
             VeryHappyFace.SetActive(false);
             Star.SetActive(true);
             Star2.SetActive(false);
             Star3.SetActive(false);
+            Star4.SetActive(false);
+            Star5.SetActive(false);
         }
-        if (TeethClean >= 7 && TeethClean < 12)
+        
+        
+        if (TeethClean >= 0 && TeethClean <= 6 && Killcount.KillCount <= 0)
         {
-            Victory = "you cleaned most of the teeth";
+            Victory = "Nice attempt! You killed all the enemies.";
             VictoryText.text = Victory;
+            Banner = "You Win!";
+            BannerText.text = Banner;
             HappyFace.SetActive(true);
             VeryHappyFace.SetActive(false);
             Star.SetActive(true);
             Star2.SetActive(true);
             Star3.SetActive(false);
+            Star4.SetActive(false);
+            Star5.SetActive(false);
+        }
+        if (TeethClean >= 7 && TeethClean < 12 && Killcount.KillCount <= 0)
+        {
+            Victory = "Good work! You cleaned most of the teeth.";
+            VictoryText.text = Victory;
+            Banner = "You Win!";
+            BannerText.text = Banner;
+            HappyFace.SetActive(true);
+            VeryHappyFace.SetActive(false);
+            Star.SetActive(true);
+            Star2.SetActive(true);
+            Star3.SetActive(true);
+            Star4.SetActive(false);
+            Star5.SetActive(false);
         }
 
-        if (TeethClean == 12)
+        if (TeethClean == 12 && Killcount.KillCount <= 0)
         {
-            Victory = "you cleaned all the teeth";
+            Victory = "Well done! You cleaned all the teeth.";
             VictoryText.text = Victory;
+            Banner = "You Win!";
+            BannerText.text = Banner;
             HappyFace.SetActive(false);
             VeryHappyFace.SetActive(true);
             Star.SetActive(true);
             Star2.SetActive(true);
             Star3.SetActive(true);
+            Star4.SetActive(true);
+            Star5.SetActive(false);
         }
+
+        if(TeethShielded == 12 & Killcount.KillCount <= 0)
+        {
+            Victory = "Excellent! You shielded all the teeth.";
+            VictoryText.text = Victory;
+            Banner = "You Win!";
+            BannerText.text = Banner;
+            HappyFace.SetActive(false);
+            VeryHappyFace.SetActive(true);
+            Star.SetActive(true);
+            Star2.SetActive(true);
+            Star3.SetActive(true);
+            Star4.SetActive(true);
+            Star5.SetActive(true);
+        }
+
+        TeethShielded = 0;
         TeethClean = 0;
     }
 }
