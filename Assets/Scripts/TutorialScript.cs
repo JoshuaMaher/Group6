@@ -112,7 +112,7 @@ public class TutorialScript : MonoBehaviour
             ExtremeHappy2.SetActive(false);
             Stress2.SetActive(false);
             TutorialText.text = "Not without high fluoride toothpaste. With the POWERUP, use SPACE BAR to reverse the decay.";
-            TutorialText2.text = "The tooth is decayed! it can't be brought back.";
+            TutorialText2.text = "The tooth is decayed! It can't be brought back.";
             Time.timeScale = 0;
             GumGuard = 1;
         }
