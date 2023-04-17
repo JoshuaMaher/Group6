@@ -14,6 +14,7 @@ public class BrushSwing : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
     [SerializeField] private AudioClip brushSound;
     [SerializeField] private int brushDamage = 1;
+    [SerializeField] public GameObject Timer;
     private Rigidbody2D body;
     public Text KillsText;
     public int KillCount;
@@ -21,6 +22,7 @@ public class BrushSwing : MonoBehaviour
     public bool canRevive;
     private float reviveTime;
     public float powerupDuration;
+    private MinutesTimer TimerValue;
 
     [SerializeField] private AudioSource sparkle;
     [SerializeField] private AudioSource killEnemy;
@@ -32,6 +34,7 @@ public class BrushSwing : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         anima = GetComponent<Animator>();
+        TimerValue = Timer.GetComponent<MinutesTimer>();
     }
 
 
@@ -91,6 +94,15 @@ public class BrushSwing : MonoBehaviour
                 if (KillCount <= 0)
                 {
                     KillCount = 0;
+                    if(TimerValue.timeValue <=15)
+                    {
+                        TimerValue.timeValue = TimerValue.timeValue;
+                    }
+                    else
+                    {
+                        TimerValue.timeValue = 15;
+                    }
+                    
                 }
                 killEnemy.Play();
             }

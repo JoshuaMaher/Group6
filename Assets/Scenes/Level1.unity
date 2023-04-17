@@ -19461,6 +19461,7 @@ MonoBehaviour:
   brushCooldown: 0.3
   brushSound: {fileID: 8300000, guid: 08a398f4808a18547b7f39e4814755fd, type: 3}
   brushDamage: 1
+  Timer: {fileID: 683896684}
   KillsText: {fileID: 365254931}
   KillCount: 20
   canRevive: 0
