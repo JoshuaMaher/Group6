@@ -23,6 +23,8 @@ public class TutorialScript : MonoBehaviour
     public float TimeValue = 0;
     float GumGuard = 0;
 
+    public GameObject player;
+
     void Update()
     {
         PopUps();          
@@ -91,7 +93,7 @@ public class TutorialScript : MonoBehaviour
             Angry2.SetActive(false);
             ExtremeHappy2.SetActive(false);
             Stress2.SetActive(false);
-            TutorialText.text = "The spiky green bacteria move faster. Use SPACE BAR to KILL them. Press Enter";
+            TutorialText.text = "The spiky green bacteria move faster. Press Enter";
             TutorialText2.text = "Double the enemies means double the cleaning.";
             Time.timeScale = 0;
             GumGuard = 1;
@@ -133,7 +135,25 @@ public class TutorialScript : MonoBehaviour
             GumGuard = 1;
         }
 
-        if (TimeValue > 63 && TimeValue < 63.1)
+        if (TimeValue > 62 && TimeValue < 62.1)
+        {
+            TutorialScene.SetActive(true);
+            SecondTextBox.SetActive(true);
+            Happy.SetActive(false);
+            Angry.SetActive(true);
+            ExtremeHappy.SetActive(false);
+            Stress.SetActive(false);
+            Happy2.SetActive(false);
+            Angry2.SetActive(false);
+            ExtremeHappy2.SetActive(false);
+            Stress2.SetActive(false);
+            TutorialText.text = "Use SPACE BAR to spin and kill enemies.";
+            TutorialText2.text = "Prevention is better than cure! Let's try killing some bacteria.";
+            Time.timeScale = 0;
+            GumGuard = 1;
+        }
+
+        if (player.GetComponent<BrushSwing>().KillCount <= 15)
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
