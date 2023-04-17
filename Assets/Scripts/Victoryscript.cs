@@ -173,7 +173,7 @@ public class Victoryscript : MonoBehaviour
         
         if (Killcount.KillCount > 0)
         {
-            Victory = "you didn't kill all the enemies";
+            Victory = "You didn't kill all the enemies. Try killing the enemies first, then cleaning teeth later.";
             VictoryText.text = Victory;
             Banner = "Better Luck Next Time";
             BannerText.text = Banner;
@@ -189,9 +189,9 @@ public class Victoryscript : MonoBehaviour
         
         if (TeethClean >= 0 && TeethClean <= 6 && Killcount.KillCount <= 0)
         {
-            Victory = "you cleaned some teeth";
+            Victory = "Nice attempt! You cleaned some of the teeth.";
             VictoryText.text = Victory;
-            Banner = "You Win";
+            Banner = "You Win!";
             BannerText.text = Banner;
             HappyFace.SetActive(true);
             VeryHappyFace.SetActive(false);
@@ -203,9 +203,9 @@ public class Victoryscript : MonoBehaviour
         }
         if (TeethClean >= 7 && TeethClean < 12 && Killcount.KillCount <= 0)
         {
-            Victory = "you cleaned most of the teeth";
+            Victory = "Good work! You cleaned most of the teeth.";
             VictoryText.text = Victory;
-            Banner = "You Win";
+            Banner = "You Win!";
             BannerText.text = Banner;
             HappyFace.SetActive(true);
             VeryHappyFace.SetActive(false);
@@ -218,9 +218,9 @@ public class Victoryscript : MonoBehaviour
 
         if (TeethClean == 12 && Killcount.KillCount <= 0)
         {
-            Victory = "you cleaned all the teeth";
+            Victory = "Well done! You cleaned all the teeth.";
             VictoryText.text = Victory;
-            Banner = "You Win";
+            Banner = "You Win!";
             BannerText.text = Banner;
             HappyFace.SetActive(false);
             VeryHappyFace.SetActive(true);
@@ -233,9 +233,9 @@ public class Victoryscript : MonoBehaviour
 
         if(TeethShielded == 12 & Killcount.KillCount <= 0)
         {
-            Victory = "you shielded all the teeth";
+            Victory = "Excellent! You shielded all the teeth.";
             VictoryText.text = Victory;
-            Banner = "You Win";
+            Banner = "You Win!";
             BannerText.text = Banner;
             HappyFace.SetActive(false);
             VeryHappyFace.SetActive(true);

@@ -86,9 +86,9 @@ public class TutorialScript : MonoBehaviour
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(true);
             Happy.SetActive(false);
-            Angry.SetActive(false);
+            Angry.SetActive(true);
             ExtremeHappy.SetActive(false);
-            Stress.SetActive(true);
+            Stress.SetActive(false);
             Happy2.SetActive(false);
             Angry2.SetActive(false);
             ExtremeHappy2.SetActive(false);
