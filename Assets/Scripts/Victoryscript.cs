@@ -72,51 +72,51 @@ public class Victoryscript : MonoBehaviour
     public void VictoryScreen()
     {
 
-        if (TopCanine1Health.currentHealth == 3)
+        if (TopCanine1Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
-        if (TopCanine2Health.currentHealth == 3)
+        if (TopCanine2Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
-        if (TopIncisor1Health.currentHealth == 3)
+        if (TopIncisor1Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
-        if (TopIncisor2Health.currentHealth == 3)
+        if (TopIncisor2Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
-        if (TopMolar1Health.currentHealth == 3)
+        if (TopMolar1Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
-        if (TopMolar2Health.currentHealth == 3)
+        if (TopMolar2Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
-        if (BotCanine1Health.currentHealth == 3)
+        if (BotCanine1Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
-        if (BotCanine2Health.currentHealth == 3)
+        if (BotCanine2Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
-        if (BotIncisor1Health.currentHealth == 3)
+        if (BotIncisor1Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
-        if (BotIncisor2Health.currentHealth == 3)
+        if (BotIncisor2Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
-        if (BotMolar1Health.currentHealth == 3)
+        if (BotMolar1Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
-        if (BotMolar2Health.currentHealth == 3)
+        if (BotMolar2Health.currentHealth >= 3)
         {
             TeethClean += 1;
         }
