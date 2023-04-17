@@ -16,10 +16,7 @@ public class UImanager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            if(pauseMenu.activeInHierarchy)
-                Pause(false);
-            else
-                Pause(true);
+            Pause(true);
         }
     }
 
@@ -65,11 +62,6 @@ public class UImanager : MonoBehaviour
         SoundManager.instance.ChangeVolumeMusic(0.2f);
     }
 
-    public void PauseButton()
-    {
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0;   
-    }
     public void HowToPlay()
     {
         SceneManager.LoadScene("how to play screen");

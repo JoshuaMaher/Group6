@@ -2940,7 +2940,15 @@ PrefabInstance:
     - target: {fileID: 1878503591, guid: efa819cbc5b4d5644bee09568033642c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 181005512}
+      objectReference: {fileID: 601336982}
+    - target: {fileID: 1878503591, guid: efa819cbc5b4d5644bee09568033642c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878503591, guid: efa819cbc5b4d5644bee09568033642c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: pause, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4438261049815073530, guid: efa819cbc5b4d5644bee09568033642c, type: 3}
       propertyPath: m_Name
       value: Pause Button (1)
@@ -3032,7 +3040,15 @@ PrefabInstance:
     - target: {fileID: 4438261050088616458, guid: efa819cbc5b4d5644bee09568033642c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 181005512}
+      objectReference: {fileID: 601336982}
+    - target: {fileID: 4438261050088616458, guid: efa819cbc5b4d5644bee09568033642c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4438261050088616458, guid: efa819cbc5b4d5644bee09568033642c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: pause, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efa819cbc5b4d5644bee09568033642c, type: 3}
 --- !u!224 &522834416 stripped
@@ -13279,6 +13295,7 @@ GameObject:
   - component: {fileID: 601336979}
   - component: {fileID: 601336978}
   - component: {fileID: 601336981}
+  - component: {fileID: 601336982}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -13393,8 +13410,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b27f02b18233c0743a0a7c04853db971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endScreen: {fileID: 1878264355}
-  pauseMenu: {fileID: 1636611449}
+  endScreen: {fileID: 2078261647}
+  pauseMenu: {fileID: 284352775}
+--- !u!114 &601336982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601336976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9437d6b9284efa4da923932da41f727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 284352775}
 --- !u!1 &629860634
 GameObject:
   m_ObjectHideFlags: 0
