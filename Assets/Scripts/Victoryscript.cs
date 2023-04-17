@@ -189,7 +189,7 @@ public class Victoryscript : MonoBehaviour
         
         if (TeethClean >= 0 && TeethClean <= 6 && Killcount.KillCount <= 0)
         {
-            Victory = "Nice attempt! You cleaned some of the teeth.";
+            Victory = "Nice attempt! You killed all the enemies.";
             VictoryText.text = Victory;
             Banner = "You Win!";
             BannerText.text = Banner;
