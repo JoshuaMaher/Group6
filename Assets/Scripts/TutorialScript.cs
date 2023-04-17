@@ -44,7 +44,7 @@ public class TutorialScript : MonoBehaviour
             Angry2.SetActive(false);
             ExtremeHappy2.SetActive(false);
             Stress2.SetActive(false);
-            TutorialText.text = "Use the ARROW KEYS to move left and right. Press Enter";
+            TutorialText.text = "Use the ARROW KEYS to move left and right.";
             Time.timeScale = 0;
             GumGuard = 1;
         }
@@ -60,7 +60,7 @@ public class TutorialScript : MonoBehaviour
             Angry2.SetActive(false);
             ExtremeHappy2.SetActive(false);
             Stress2.SetActive(false);
-            TutorialText.text = "Use the UP ARROW to jump. Press Enter";
+            TutorialText.text = "Use the UP ARROW to jump.";
             Time.timeScale = 0;
             GumGuard = 1;
         }
@@ -76,7 +76,7 @@ public class TutorialScript : MonoBehaviour
             Angry2.SetActive(false);
             ExtremeHappy2.SetActive(false);
             Stress2.SetActive(false);
-            TutorialText.text = "Use SPACE BAR to spin and clean the tooth. Press Enter";
+            TutorialText.text = "Use SPACE BAR to spin and clean the tooth.";
             TutorialText2.text = "Oh no! A bacteria is attacking the tooth. It clings to the sticky plaque and releases acid.";
             Time.timeScale = 0;
             GumGuard = 1;
@@ -93,7 +93,7 @@ public class TutorialScript : MonoBehaviour
             Angry2.SetActive(false);
             ExtremeHappy2.SetActive(false);
             Stress2.SetActive(false);
-            TutorialText.text = "The spiky green bacteria move faster. Press Enter";
+            TutorialText.text = "The spiky green bacteria move faster.";
             TutorialText2.text = "Double the enemies means double the cleaning.";
             Time.timeScale = 0;
             GumGuard = 1;
@@ -111,7 +111,7 @@ public class TutorialScript : MonoBehaviour
             Angry2.SetActive(false);
             ExtremeHappy2.SetActive(false);
             Stress2.SetActive(false);
-            TutorialText.text = "Not without high fluoride toothpaste. With the POWERUP, use SPACE BAR to reverse the decay. Press Enter";
+            TutorialText.text = "Not without high fluoride toothpaste. With the POWERUP, use SPACE BAR to reverse the decay.";
             TutorialText2.text = "The tooth is decayed! it can't be brought back.";
             Time.timeScale = 0;
             GumGuard = 1;
@@ -129,7 +129,7 @@ public class TutorialScript : MonoBehaviour
             Angry2.SetActive(false);
             ExtremeHappy2.SetActive(false);
             Stress2.SetActive(false);
-            TutorialText.text = "The powerup doesn't last forever. Press Enter";
+            TutorialText.text = "The powerup doesn't last forever.";
             TutorialText2.text = "The fluoride strengthens the enamel: your tooth's protective shield.";
             Time.timeScale = 0;
             GumGuard = 1;
@@ -165,7 +165,7 @@ public class TutorialScript : MonoBehaviour
             Angry2.SetActive(false);
             ExtremeHappy2.SetActive(false);
             Stress2.SetActive(false);
-            TutorialText.text = "You will have 2 minutes to kill 20 enemies. Use leftover time to clean any damaged teeth.Press Enter";
+            TutorialText.text = "You will have 2 minutes to kill 20 enemies. Use leftover time to clean any damaged teeth.";
             TutorialText2.text = "That concludes your training.";
             Time.timeScale = 0;
             GumGuard = 2;
