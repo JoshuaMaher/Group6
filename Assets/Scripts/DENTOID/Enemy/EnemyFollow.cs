@@ -34,7 +34,7 @@ public class EnemyFollow : MonoBehaviour
 
         if (lifetime < 2)
         {
-           
+
 
             playerAngle = Vector2.Distance(transform.position, player.transform.position);
             Vector2 playerDirection = player.transform.position - transform.position;
@@ -92,8 +92,14 @@ public class EnemyFollow : MonoBehaviour
             //Quaternion.Euler us just maths stuff concerned with rotations
             //The .forward is part of Unity, and tells the enemy to go forward
         }
-        
+
+        if(player.GetComponent<BrushSwing>().KillCount <= 0)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
+
+   
 
     protected void OnTriggerEnter2D(Collider2D collision)
     {
@@ -105,5 +111,6 @@ public class EnemyFollow : MonoBehaviour
         }
 
     }
+
 
 }
