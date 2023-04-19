@@ -179,11 +179,11 @@ public class Victoryscript : MonoBehaviour
             BannerText.text = Banner;
             HappyFace.SetActive(true);
             VeryHappyFace.SetActive(false);
-            Star.SetActive(true);
+            Star.SetActive(false);
             Star2.SetActive(false);
             Star3.SetActive(false);
             Star4.SetActive(false);
-            Star5.SetActive(false);
+            Star5.SetActive(true);
         }
         
         
