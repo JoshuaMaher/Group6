@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5237170358721330650}
   - component: {fileID: 7156835959552497520}
   m_Layer: 8
-  m_Name: GreenEnemy
+  m_Name: HardGreen
   m_TagString: FlyingEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,11 +104,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   specifiedTooth: {fileID: 0}
   player: {fileID: 0}
-  speed: 2.7
+  speed: 4
   damage: 1
   toothAngle: 0
   playerAngle: 0
-  followNum: 2
+  lifetime: 0
+  followNum: 0.02
 --- !u!61 &2407857193234683098
 BoxCollider2D:
   m_ObjectHideFlags: 0

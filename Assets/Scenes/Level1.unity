@@ -18532,7 +18532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 1
   shootPos: {fileID: 1307424852}
-  bullet: {fileID: 2407857193234683103, guid: 639aa4ec8fe736147bd0bca77b67b3c3, type: 3}
+  bullet: {fileID: 2407857193234683103, guid: 2c127f0fc7261024b8cba6b309e654a4, type: 3}
   topMolar1: {fileID: 570971459}
   topCanine1: {fileID: 1262689865}
   topIncisor1: {fileID: 646309063}
@@ -18934,7 +18934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 1
   shootPos: {fileID: 1351351681}
-  bullet: {fileID: 2407857193234683103, guid: 639aa4ec8fe736147bd0bca77b67b3c3, type: 3}
+  bullet: {fileID: 2407857193234683103, guid: 2c127f0fc7261024b8cba6b309e654a4, type: 3}
   topMolar1: {fileID: 570971459}
   topCanine1: {fileID: 1262689865}
   topIncisor1: {fileID: 646309063}

@@ -2997,7 +2997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootPos: {fileID: 416642696}
-  bullet: {fileID: 2407857193234683103, guid: 639aa4ec8fe736147bd0bca77b67b3c3, type: 3}
+  bullet: {fileID: 2407857193234683103, guid: 2c127f0fc7261024b8cba6b309e654a4, type: 3}
   goTime: 20
   timer: {fileID: 355335381}
   player: {fileID: 424378221}
@@ -17637,7 +17637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootPos: {fileID: 1113845725}
-  bullet: {fileID: 2407857193234683103, guid: 639aa4ec8fe736147bd0bca77b67b3c3, type: 3}
+  bullet: {fileID: 2407857193234683103, guid: 2c127f0fc7261024b8cba6b309e654a4, type: 3}
   goTime: 8
   timer: {fileID: 355335381}
   player: {fileID: 424378221}
@@ -17811,7 +17811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootPos: {fileID: 1137018637}
-  bullet: {fileID: 2407857193234683103, guid: 639aa4ec8fe736147bd0bca77b67b3c3, type: 3}
+  bullet: {fileID: 2407857193234683103, guid: 2c127f0fc7261024b8cba6b309e654a4, type: 3}
   goTime: 36
   timer: {fileID: 355335381}
   player: {fileID: 424378221}

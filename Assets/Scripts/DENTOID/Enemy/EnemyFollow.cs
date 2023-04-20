@@ -18,8 +18,9 @@ public class EnemyFollow : MonoBehaviour
     public float toothAngle;
     public float playerAngle;
 
-    private float lifetime;
+    public float lifetime;
 
+    public float followNum = 2;
     SpriteRenderer spi;
 
     void Awake()
@@ -32,7 +33,7 @@ public class EnemyFollow : MonoBehaviour
     {
         lifetime += Time.deltaTime;
 
-        if (lifetime < 2)
+        if (lifetime < followNum)
         {
 
 
@@ -60,7 +61,7 @@ public class EnemyFollow : MonoBehaviour
 
         }
 
-        if (lifetime > 2)
+        if (lifetime > followNum)
         {
 
             toothDist = Vector2.Distance(transform.position, specifiedTooth.transform.position); //Distance between enemy and specified tooth
