@@ -6,14 +6,24 @@ using UnityEngine.UI;
 
 public class handleButton : MonoBehaviour
 {
-
-  public void buttonBehaviour()
+  [SerializeField] public GameObject Difficulty;
+ 
+  public void play()
+    {
+        Difficulty.SetActive(true);
+    }
+  public void Normal()
   {
     SceneManager.LoadScene("Level1");
         Time.timeScale = 1;
   }
+  public void Hard()
+  {
+    SceneManager.LoadScene("HardMode");
+    Time.timeScale = 1;
+  }
 
-  public void Options()
+    public void Options()
   {
     SceneManager.LoadScene("Options");
   }

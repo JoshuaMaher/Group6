@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/How to play screen.unity
     guid: d6f97c24c900c8449a606d6d8b2fa985
+  - enabled: 1
+    path: Assets/Scenes/HardMode.unity
+    guid: 3286ec47ee1f1714da8e16e847e52eae
   m_configObjects: {}
