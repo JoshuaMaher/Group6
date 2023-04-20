@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315bc71fcfc99be4d89e936baf18cc8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 1
+  bulletSpeed: 2
   shootPos: {fileID: 42463198}
   bullet: {fileID: 2407857193234683103, guid: d404716052ebd584498531205a2ce4a9, type: 3}
   topMolar1: {fileID: 570971459}
@@ -252,7 +252,7 @@ MonoBehaviour:
   bottomIncisor2: {fileID: 1424854255}
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
-  fireRate: 15
+  fireRate: 6
   timer: {fileID: 683896684}
   currentTime: 0
   player: {fileID: 1458083276}
@@ -18530,7 +18530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315bc71fcfc99be4d89e936baf18cc8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 1
+  bulletSpeed: 4
   shootPos: {fileID: 1307424852}
   bullet: {fileID: 2407857193234683103, guid: 639aa4ec8fe736147bd0bca77b67b3c3, type: 3}
   topMolar1: {fileID: 570971459}
@@ -18545,7 +18545,7 @@ MonoBehaviour:
   bottomIncisor2: {fileID: 1424854255}
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
-  fireRate: 7
+  fireRate: 3
   timer: {fileID: 683896684}
   currentTime: 0
   player: {fileID: 1458083276}
@@ -18932,7 +18932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315bc71fcfc99be4d89e936baf18cc8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 1
+  bulletSpeed: 4
   shootPos: {fileID: 1351351681}
   bullet: {fileID: 2407857193234683103, guid: 639aa4ec8fe736147bd0bca77b67b3c3, type: 3}
   topMolar1: {fileID: 570971459}
@@ -18947,7 +18947,7 @@ MonoBehaviour:
   bottomIncisor2: {fileID: 1424854255}
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
-  fireRate: 5
+  fireRate: 3
   timer: {fileID: 683896684}
   currentTime: 0
   player: {fileID: 1458083276}
@@ -19917,7 +19917,7 @@ MonoBehaviour:
   brushDamage: 1
   Timer: {fileID: 683896684}
   KillsText: {fileID: 365254931}
-  KillCount: 50
+  KillCount: 5
   canRevive: 0
   powerupDuration: 30
   sparkle: {fileID: 1458083290}
@@ -20246,7 +20246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 315bc71fcfc99be4d89e936baf18cc8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 1
+  bulletSpeed: 2
   shootPos: {fileID: 1498345439}
   bullet: {fileID: 2407857193234683103, guid: d404716052ebd584498531205a2ce4a9, type: 3}
   topMolar1: {fileID: 570971459}
@@ -20261,7 +20261,7 @@ MonoBehaviour:
   bottomIncisor2: {fileID: 1424854255}
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
-  fireRate: 14
+  fireRate: 6
   timer: {fileID: 683896684}
   currentTime: 0
   player: {fileID: 1458083276}
