@@ -24,6 +24,8 @@ public class BrushSwing : MonoBehaviour
     public float powerupDuration;
     private MinutesTimer TimerValue;
 
+    public int cleanTime = 20; //length of time we give them at end to clean
+
     [SerializeField] private AudioSource sparkle;
     [SerializeField] private AudioSource killEnemy;
     [SerializeField] private ParticleSystem powerUpParticles;
@@ -94,13 +96,13 @@ public class BrushSwing : MonoBehaviour
                 if (KillCount <= 0)
                 {
                     KillCount = 0;
-                    if(TimerValue.timeValue <=20)
+                    if(TimerValue.timeValue <= cleanTime)
                     {
                         TimerValue.timeValue = TimerValue.timeValue;
                     }
                     else
                     {
-                        TimerValue.timeValue = 20;
+                        TimerValue.timeValue = cleanTime;
                     }
                     
                 }

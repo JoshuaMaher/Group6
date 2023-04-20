@@ -20156,6 +20156,7 @@ MonoBehaviour:
   KillCount: 40
   canRevive: 0
   powerupDuration: 15
+  cleanTime: 15
   sparkle: {fileID: 1458083290}
   killEnemy: {fileID: 1458083289}
   powerUpParticles: {fileID: 549903737}
