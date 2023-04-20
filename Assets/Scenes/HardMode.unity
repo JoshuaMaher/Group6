@@ -252,7 +252,7 @@ MonoBehaviour:
   bottomIncisor2: {fileID: 1424854255}
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
-  fireRate: 6
+  fireRate: 8
   timer: {fileID: 683896684}
   currentTime: 0
   player: {fileID: 1458083276}
@@ -18545,7 +18545,7 @@ MonoBehaviour:
   bottomIncisor2: {fileID: 1424854255}
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
-  fireRate: 3
+  fireRate: 5
   timer: {fileID: 683896684}
   currentTime: 0
   player: {fileID: 1458083276}
@@ -18947,7 +18947,7 @@ MonoBehaviour:
   bottomIncisor2: {fileID: 1424854255}
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
-  fireRate: 3
+  fireRate: 5
   timer: {fileID: 683896684}
   currentTime: 0
   player: {fileID: 1458083276}
@@ -19917,7 +19917,7 @@ MonoBehaviour:
   brushDamage: 1
   Timer: {fileID: 683896684}
   KillsText: {fileID: 365254931}
-  KillCount: 5
+  KillCount: 50
   canRevive: 0
   powerupDuration: 30
   sparkle: {fileID: 1458083290}
@@ -20261,7 +20261,7 @@ MonoBehaviour:
   bottomIncisor2: {fileID: 1424854255}
   bottomCanine2: {fileID: 875521380}
   bottomMolar2: {fileID: 1741524610}
-  fireRate: 6
+  fireRate: 8
   timer: {fileID: 683896684}
   currentTime: 0
   player: {fileID: 1458083276}
