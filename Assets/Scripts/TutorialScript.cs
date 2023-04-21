@@ -20,6 +20,10 @@ public class TutorialScript : MonoBehaviour
     [SerializeField] private GameObject Stress2;
     [SerializeField] private Text TutorialText;
     [SerializeField] private Text TutorialText2;
+    [SerializeField] public Text Introduction;
+    [SerializeField] public GameObject GumGuardIntro;
+    private string IntroductionText;
+
     public float TimeValue = 0;
     float GumGuard = 0;
 
@@ -32,7 +36,20 @@ public class TutorialScript : MonoBehaviour
 
     public void PopUps()
     {
+
         if (TimeValue == 0)
+        {
+            GumGuardIntro.SetActive(true);
+            Time.timeScale = 0;
+            IntroductionText = "Hey Dentoid! I'm Gum Guard. But you already knew that. \n\n Ready to clean some teeth? \n\n The bacteria in this patient's mouth are feeding off sugar and multiplying. \n\n Press ENTER to start your training.";
+            Introduction.text = IntroductionText;
+            GumGuard = 1;
+
+        }
+        
+        
+        
+        if (TimeValue >= 1 && TimeValue < 1.1)
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(false);
@@ -176,6 +193,7 @@ public class TutorialScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 TutorialScene.SetActive(false);
+                GumGuardIntro.SetActive(false);
                 Time.timeScale = 1;
                 GumGuard = 0;
                 TimeValue += 1;
