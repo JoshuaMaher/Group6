@@ -54,4 +54,8 @@ public class handleButton : MonoBehaviour
     {
         SceneManager.LoadScene("How to play screen");
     }
+  public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
