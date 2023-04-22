@@ -111,7 +111,7 @@ public class SpawnEnemy : MonoBehaviour
 
         newBullet.GetComponent<EnemyFollow>().player = player;
 
-        randomNumber = Random.Range(1, 12);
+        randomNumber = Random.Range(1, 13);
 
         if(randomNumber == 1)
         {
