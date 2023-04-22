@@ -49,7 +49,7 @@ public class TutorialScript : MonoBehaviour
         
         
         
-        if (TimeValue >= 1 && TimeValue < 1.1)
+        if (TimeValue >= 1 && TimeValue < 1.5)
         {
             TutorialScene.SetActive(true);
             SecondTextBox.SetActive(false);
