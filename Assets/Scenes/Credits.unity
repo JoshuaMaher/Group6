@@ -218,6 +218,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Back
       objectReference: {fileID: 0}
+    - target: {fileID: 826055665009709453, guid: 86ad7e5a5fa56e241a55dedd17dbdebb, type: 3}
+      propertyPath: m_fontSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 826055665009709453, guid: 86ad7e5a5fa56e241a55dedd17dbdebb, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 826055665009709454, guid: 86ad7e5a5fa56e241a55dedd17dbdebb, type: 3}
       propertyPath: m_SizeDelta.x
       value: 615.73
@@ -268,11 +276,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 826055665776145465, guid: 86ad7e5a5fa56e241a55dedd17dbdebb, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 387.57
+      value: 696.92
       objectReference: {fileID: 0}
     - target: {fileID: 826055665776145465, guid: 86ad7e5a5fa56e241a55dedd17dbdebb, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 129.53
+      value: 194.28
       objectReference: {fileID: 0}
     - target: {fileID: 826055665776145465, guid: 86ad7e5a5fa56e241a55dedd17dbdebb, type: 3}
       propertyPath: m_LocalScale.x
@@ -316,11 +324,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 826055665776145465, guid: 86ad7e5a5fa56e241a55dedd17dbdebb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -340.1
+      value: -790
       objectReference: {fileID: 0}
     - target: {fileID: 826055665776145465, guid: 86ad7e5a5fa56e241a55dedd17dbdebb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 200.85
+      value: 459
       objectReference: {fileID: 0}
     - target: {fileID: 826055665776145465, guid: 86ad7e5a5fa56e241a55dedd17dbdebb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -368,7 +376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 826055666051354510, guid: 86ad7e5a5fa56e241a55dedd17dbdebb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -12.000107
+      value: -12.000092
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86ad7e5a5fa56e241a55dedd17dbdebb, type: 3}
@@ -497,11 +505,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -655,8 +663,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -9}
-  m_SizeDelta: {x: 700, y: 427.92}
+  m_AnchoredPosition: {x: 25.54, y: -26.02}
+  m_SizeDelta: {x: 1772.55, y: 915.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1787843031
 MonoBehaviour:
@@ -680,7 +688,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -691,10 +699,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Programmers:          Josh Innes\n\t                                Kacper
-    Foks\n                                    Joshua Maher     \t\n\nLead Designer:       
-    Joshua Maher\n\nLead Artist:               Leo Haggerty\n\nArtists:                      
-    Heather Mitchell\n                                    Ryan Hunter\n                                   
+  m_Text: "Programmers:          Josh Innes\n\t                              Kacper
+    Foks\n\t                              Joshua Maher     \t\n\nLead Designer:        
+    Joshua Maher\n\nLead Artist:               Leo Haggerty\n\nArtists:                     
+    Heather Mitchell\n                                  Ryan Hunter\n                                 
     Marea Routchkine"
 --- !u!222 &1787843032
 CanvasRenderer:
@@ -783,8 +791,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000045776, y: 0.000022888}
-  m_SizeDelta: {x: 864.4, y: 470}
+  m_AnchoredPosition: {x: 0, y: 0.00050354004}
+  m_SizeDelta: {x: 1920, y: 1056.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2029531508
 MonoBehaviour:
