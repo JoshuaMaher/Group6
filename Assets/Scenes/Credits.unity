@@ -692,9 +692,10 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Programmers:          Josh Innes\n\t                                Kacper
-    Foks\t\n\nLead Designer:        Joshua Maher\n\nLead Artist:               Leo
-    Haggerty\n\nArtists:                       Heather Mitchell\n                                   
-    Ryan Hunter\n                                    Marea Routchkine"
+    Foks\n                                    Joshua Maher     \t\n\nLead Designer:       
+    Joshua Maher\n\nLead Artist:               Leo Haggerty\n\nArtists:                      
+    Heather Mitchell\n                                    Ryan Hunter\n                                   
+    Marea Routchkine"
 --- !u!222 &1787843032
 CanvasRenderer:
   m_ObjectHideFlags: 0
