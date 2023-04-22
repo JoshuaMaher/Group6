@@ -20153,7 +20153,7 @@ MonoBehaviour:
   brushDamage: 1
   Timer: {fileID: 683896684}
   KillsText: {fileID: 365254931}
-  KillCount: 40
+  KillCount: 50
   canRevive: 0
   powerupDuration: 15
   cleanTime: 15
