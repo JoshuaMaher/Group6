@@ -26,7 +26,7 @@ public class Powerup : MonoBehaviour
 
         if (currentTime <= 40 && !hasDecided) //Spawns at 40 secs left and random number only decided once
         {
-            randomNumber = Random.Range(1, 3); //generates random number between 1 and 3
+            randomNumber = Random.Range(1, 4); //generates random number between 1 and 3
             hasDecided = true;
             spawnGlow.Play();
         }
